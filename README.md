@@ -1,1 +1,3 @@
-welcome to my personal website! made during june 2025!
+hi my name is ava! welcome to my personal website!
+
+this website was made during june 2025 and utilizes next.js!

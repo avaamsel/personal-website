@@ -19,14 +19,14 @@ const lexend = Lexend({
 export const metadata = {
   title: "ava's website!",
   description: "ava nunes' personal website!",
-  icons: {}
+  icons: {icon: '/ava-bubble.svg'}
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${lexend.variable} antialiased`}
       >
         {children}
       </body>
