@@ -19,7 +19,7 @@ const lexend = Lexend({
 export const metadata = {
   title: "ava's website!",
   description: "ava nunes' personal website!",
-  icons: {icon: '/ava-bubble.svg'}
+  icons: {icon: '/bubble.svg'}
 };
 
 export default function RootLayout({ children }) {

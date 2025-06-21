@@ -14,16 +14,21 @@ body {
 }
 
 /* navbar stylings */
-.sidebar {
+.sidebar-home {
   background-color: #9DD575;
   color: white;
-  width: 22rem;
+  width: 20rem;
   height: 100vh;
   padding: 20px;
   text-align: center;
 }
 
-.navbar:hover {
+.navbar-home {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.navbar-home:hover {
   color: #618F40;
   border: 3px solid #618F40;
   border-radius: 32px;
@@ -31,8 +36,164 @@ body {
   background-color: white;
 }
 
-.navbar-bottom {
+.navbar-home-bottom {
   color: #618F40;
+}
+
+.sidebar-about {
+  background-color: #F9A75B;
+  color: white;
+  width: 22rem;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar-about {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.navbar-about:hover {
+  color: #D06F15;
+  border: 3px solid #D06F15;
+  border-radius: 32px;
+  padding: 6px 16px;
+  background-color: white;
+}
+
+.navbar-about-bottom {
+  color: #D06F15;
+}
+
+.about-home {
+  color: #D06F15;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.about-home:hover {
+  border: 3px solid #D06F15;
+  border-radius: 32px;
+  padding: 6px 16px;
+  background-color: white;
+}
+
+.sidebar-experience {
+  background-color: #53B5AD;
+  color: white;
+  width: 22rem;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar-experience {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.navbar-experience:hover {
+  color: #0B6860;
+  border: 3px solid #0B6860;
+  border-radius: 32px;
+  padding: 6px 16px;
+  background-color: white;
+}
+
+.navbar-experience-bottom {
+  color: #0B6860;
+}
+
+.experience-home {
+  color: #0B6860;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.experience-home:hover {
+  border: 3px solid #0B6860;
+  border-radius: 32px;
+  padding: 6px 16px;
+  background-color: white;
+}
+
+.sidebar-projects {
+  background-color: #C199DF;
+  color: white;
+  width: 22rem;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar-projects {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.navbar-projects:hover {
+  color: #6A3791;
+  border: 3px solid #6A3791;
+  border-radius: 32px;
+  padding: 6px 16px;
+  background-color: white;
+}
+
+.navbar-projects-bottom {
+  color: #6A3791;
+}
+
+.projects-home {
+  color: #6A3791;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.projects-home:hover {
+  border: 3px solid #6A3791;
+  border-radius: 32px;
+  padding: 6px 16px;
+  background-color: white;
+}
+
+.sidebar-contact {
+  background-color: #DF99B9;
+  color: white;
+  width: 22rem;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar-contact {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.navbar-contact:hover {
+  color: #AC4976;
+  border: 3px solid #AC4976;
+  border-radius: 32px;
+  padding: 6px 16px;
+  background-color: white;
+}
+
+.navbar-contact-bottom {
+  color: #AC4976;
+}
+
+.contact-home {
+  color: #AC4976;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.contact-home:hover {
+  border: 3px solid #AC4976;
+  border-radius: 32px;
+  padding: 6px 16px;
+  background-color: white;
 }
 
 /* home stylings */
