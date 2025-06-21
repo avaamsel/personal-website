@@ -35,7 +35,7 @@ export default function Sidebar() {
     return (
       <div>
         <div id="sidebar" className={`${sideBG} flex flex-col items-center`}>
-          <div className="flex justify center mb-10 mt-2 space-x-8">
+          <div className="flex justify-center mb-10 mt-2 space-x-8">
             <Image src={`${dot}`}
               alt="dot"
               height={12}

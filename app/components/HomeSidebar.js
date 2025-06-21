@@ -9,7 +9,7 @@ export default function Sidebar() {
     return (
       <div>
         <div id="sidebar" className="sidebar-home flex flex-col items-center">
-          <div className="flex justify center mb-10 mt-2 space-x-8">
+          <div className="flex justify-center mb-10 mt-2 space-x-8">
             <Image src="dot-home.svg"
               alt="home dot"
               height={12}
@@ -60,7 +60,8 @@ export default function Sidebar() {
               </a>
             </div>
 
-            <p className="navbar-home-bottom text-[18px]">ava nunes  &copy; {new Date().getFullYear()}</p>
+            <p className="navbar-home-bottom text-[18px]">avadnunes@gmail.com</p>
+            {/* <p className="navbar-home-bottom text-[18px]">ava nunes  &copy; {new Date().getFullYear()}</p> */}
           </div>
         </div>
       </div>
