@@ -2,9 +2,13 @@ import Sidebar from "../components/Sidebar"
 
 export default function Contact() {
   return (
-    <div>
-      <Sidebar/>
-      <p>contact</p>
+    <div className="flex flex-col">
+      <div className="flex">
+        <Sidebar/>
+        <div className="flex-col ml-24">
+          <p className="contact">contact me!</p>
+        </div>
+      </div>
              {/* <main
             style={{
             padding: '2rem',

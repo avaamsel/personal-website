@@ -17,7 +17,7 @@ body {
 .sidebar-home {
   background-color: #9DD575;
   color: white;
-  width: 20rem;
+  width: 18rem;
   height: 100vh;
   padding: 20px;
   text-align: center;
@@ -40,10 +40,15 @@ body {
   color: #618F40;
 }
 
+.bubble:hover {
+  -webkit-transform: translateY(-3px);
+	transform: translateY(-3px);
+}
+
 .sidebar-about {
   background-color: #F9A75B;
   color: white;
-  width: 22rem;
+  width: 18rem;
   height: 100vh;
   padding: 20px;
   text-align: center;
@@ -66,23 +71,10 @@ body {
   color: #D06F15;
 }
 
-.about-home {
-  color: #D06F15;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.about-home:hover {
-  border: 3px solid #D06F15;
-  border-radius: 32px;
-  padding: 6px 16px;
-  background-color: white;
-}
-
 .sidebar-experience {
   background-color: #53B5AD;
   color: white;
-  width: 22rem;
+  width: 18rem;
   height: 100vh;
   padding: 20px;
   text-align: center;
@@ -105,23 +97,10 @@ body {
   color: #0B6860;
 }
 
-.experience-home {
-  color: #0B6860;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.experience-home:hover {
-  border: 3px solid #0B6860;
-  border-radius: 32px;
-  padding: 6px 16px;
-  background-color: white;
-}
-
 .sidebar-projects {
   background-color: #C199DF;
   color: white;
-  width: 22rem;
+  width: 18rem;
   height: 100vh;
   padding: 20px;
   text-align: center;
@@ -144,23 +123,10 @@ body {
   color: #6A3791;
 }
 
-.projects-home {
-  color: #6A3791;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.projects-home:hover {
-  border: 3px solid #6A3791;
-  border-radius: 32px;
-  padding: 6px 16px;
-  background-color: white;
-}
-
 .sidebar-contact {
   background-color: #DF99B9;
   color: white;
-  width: 22rem;
+  width: 18rem;
   height: 100vh;
   padding: 20px;
   text-align: center;
@@ -183,29 +149,37 @@ body {
   color: #AC4976;
 }
 
-.contact-home {
-  color: #AC4976;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.contact-home:hover {
-  border: 3px solid #AC4976;
-  border-radius: 32px;
-  padding: 6px 16px;
-  background-color: white;
-}
-
 /* home stylings */
 .welcome {
   color: #9DD575;
   font-size: 1.75em;
+  margin-top: 4%;
 }
 
 /* about stylings */
+.about {
+  color: #F9A75B;
+  font-size: 1.75em;
+  margin-top: 16%;
+}
 
 /* experience stylings */
+.experience {
+  color: #53B5AD;
+  font-size: 1.75em;
+  margin-top: 12%;
+}
 
 /* projects stylings */
+.projects {
+  color: #C199DF;
+  font-size: 1.75em;
+  margin-top: 14%;
+}
 
 /* contact stylings */
+.contact {
+  color: #DF99B9;
+  font-size: 1.75em;
+  margin-top: 14%;
+}
