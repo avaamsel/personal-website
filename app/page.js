@@ -1,7 +1,10 @@
 import HomeSidebar from "./components/HomeSidebar";
+import Footer from "./components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 
+
+// need to make the right side scroll and the left sidebar completely static
 export default function Home() {
   return (
     <div className="flex flex-col">
@@ -9,7 +12,7 @@ export default function Home() {
         <HomeSidebar/>
         <div className="flex-col ml-24">
           <p className="welcome">welcome!</p>
-          <p className="text-[22px] mt-2">thanks for visiting my website! feel free to click around!</p>
+          <p className="text-body">thanks for visiting my website! feel free to click around!</p>
 
           <div className="flex space-x-20 ml-20 mt-18">
             <div className="flex-col">
@@ -18,7 +21,7 @@ export default function Home() {
                   alt="about bubble"
                   height = {125}
                   width = {180}
-                  className="translate-y-16 -translate-x-24 hover:translate-y-1"/>
+                  className="translate-y-16 -translate-x-24 hover:translate-y-12"/>
               </Link>
               <Image src ="/turdie-home.svg"
                 alt="turdie home"
@@ -32,7 +35,7 @@ export default function Home() {
                   alt="experience bubble"
                   height = {125}
                   width = {180}
-                  className="translate-y-12 translate-x-6 hover:-translate-y-2"/>
+                  className="translate-y-12 translate-x-6 hover:translate-y-12"/>
               </Link>
               <Image src ="/bubby-home.svg"
                 alt="bubby home"
@@ -46,7 +49,7 @@ export default function Home() {
                   alt="projects bubble"
                   height = {125}
                   width = {180}
-                  className="translate-y-12 translate-x-40 hover:-translate-y-2"/>
+                  className="translate-y-12 translate-x-40 hover:translate-y-24"/>
               </Link>
               <Image src ="/trixie-home.svg"
                 alt="trixie home"
@@ -55,54 +58,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex justify-center mb-4 mt-2 ml-20 space-x-8">
-            <Image src="/row-dots/dot1-home.svg"
-              alt="home dot1"
-              height={22}
-              width={22}
-              className="hover:-translate-y-1"/>
-            <Image src="/row-dots/dot1-home.svg"
-              alt="home dot"
-              height={22}
-              width={22}
-              className="hover:-translate-y-1"/>
-            <Image src="/row-dots/dot1-home.svg"
-              alt="home dot"
-              height={22}
-              width={22}
-              className="hover:-translate-y-1"/>
-            <Image src="/row-dots/dot1-home.svg"
-              alt="home dot"
-              height={22}
-              width={22}
-              className="hover:-translate-y-1"/>
-            <Image src="/row-dots/dot1-home.svg"
-              alt="home dot"
-              height={22}
-              width={22}
-              className="hover:-translate-y-1"/>
-            <Image src="/row-dots/dot1-home.svg"
-              alt="home dot"
-              height={22}
-              width={22}
-              className="hover:-translate-y-1"/>
-            <Image src="/row-dots/dot1-home.svg"
-              alt="home dot"
-              height={22}
-              width={22}
-              className="hover:-translate-y-1"/>
-            <Image src="/row-dots/dot1-home.svg"
-              alt="home dot"
-              height={22}
-              width={22}
-              className="hover:-translate-y-1"/>
-            <Image src="/row-dots/dot1-home.svg"
-              alt="home dot"
-              height={22}
-              width={22}
-              className="hover:-translate-y-1"/>
+          <div className="mt-42">
+            <Footer/>
           </div>
-          <p className="navbar-home-bottom flex justify-center mb-8 ml-20 text-[18px]">ava nunes  &copy; {new Date().getFullYear()}</p>
         </div>
       </div>
     </div>

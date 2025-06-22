@@ -86,7 +86,7 @@ export default function Sidebar() {
               </a>
             </div>
 
-            <p className={`${textBottom} text-[18px]`}>ava nunes  &copy; {new Date().getFullYear()}</p>
+            <a href="/contact" className={`${textBottom} text-[18px]`}>avadnunes@gmail.com</a>
           </div>
         </div>
       </div>

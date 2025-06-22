@@ -13,6 +13,10 @@ body {
   cursor: default;
 }
 
+.text-body {
+  font-size: 0.9em;
+  margin-top: 2;
+}
 /* navbar stylings */
 .sidebar-home {
   background-color: #9DD575;

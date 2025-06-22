@@ -60,8 +60,7 @@ export default function Sidebar() {
               </a>
             </div>
 
-            <p className="navbar-home-bottom text-[18px]">avadnunes@gmail.com</p>
-            {/* <p className="navbar-home-bottom text-[18px]">ava nunes  &copy; {new Date().getFullYear()}</p> */}
+            <a href="/contact" className="navbar-home-bottom text-[18px]">avadnunes@gmail.com</a>
           </div>
         </div>
       </div>
