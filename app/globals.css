@@ -45,7 +45,6 @@ body {
 }
 
 .bubble:hover {
-  -webkit-transform: translateY(-3px);
 	transform: translateY(-3px);
 }
 
@@ -155,35 +154,85 @@ body {
 
 /* home stylings */
 .welcome {
-  color: #9DD575;
+  color: #618F40;
   font-size: 1.75em;
   margin-top: 4%;
 }
 
+.home-bubble:hover {
+	transform: translateY(-12px);
+}
+
 /* about stylings */
 .about {
-  color: #F9A75B;
+  color: #D06F15;
   font-size: 1.75em;
   margin-top: 16%;
 }
 
 /* experience stylings */
 .experience {
-  color: #53B5AD;
+  color: #0B6860;
   font-size: 1.75em;
   margin-top: 8%;
 }
 
 /* projects stylings */
 .projects {
-  color: #C199DF;
+  color: #6A3791;
   font-size: 1.75em;
   margin-top: 8%;
 }
 
 /* contact stylings */
 .contact {
-  color: #DF99B9;
+  color: #AC4976;
   font-size: 1.75em;
-  margin-top: 14%;
+  margin-top: 4%;
 }
+
+.box-name {
+  width: 80%;
+  padding: 12px;
+  border: 3px solid #F9A75B;
+  border-radius: 32px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.box-email {
+  width: 80%;
+  padding: 12px;
+  border: 3px solid #53B5AD;
+  border-radius: 32px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.box-message {
+  width: 80%;
+  padding: 12px;
+  border: 3px solid #C199DF;
+  border-radius: 32px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.submit:hover {
+  transform: translateY(-12px);
+}
+
+.message {
+  background-color: #9DD575;
+  color: white;
+  padding: 6px 12px;
+  font-size: 0.8em;
+  width: 70%;
+  border-radius: 12px;
+  text-align: center;
+  margin-left: 15%;
+  transform: translateY(-90px);
+}
+
+/*fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-2 rounded shadow-md transition-opacity">
+ */

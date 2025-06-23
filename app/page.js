@@ -12,7 +12,7 @@ export default function Home() {
         <HomeSidebar/>
         <div className="flex-col ml-24">
           <p className="welcome">welcome!</p>
-          <p className="text-body">thanks for visiting my website! feel free to click around!</p>
+          <p className="text-body">thanks for visiting my website! feel free to click around and get to know me!</p>
 
           <div className="flex space-x-20 ml-20 mt-18">
             <div className="flex-col">
@@ -21,7 +21,7 @@ export default function Home() {
                   alt="about bubble"
                   height = {125}
                   width = {180}
-                  className="translate-y-16 -translate-x-24 hover:translate-y-12"/>
+                  className="home-bubble translate-y-16 -translate-x-24"/>
               </Link>
               <Image src ="/turdie-home.svg"
                 alt="turdie home"
@@ -35,7 +35,7 @@ export default function Home() {
                   alt="experience bubble"
                   height = {125}
                   width = {180}
-                  className="translate-y-12 translate-x-6 hover:translate-y-12"/>
+                  className="home-bubble translate-y-12 translate-x-6"/>
               </Link>
               <Image src ="/bubby-home.svg"
                 alt="bubby home"
@@ -49,7 +49,7 @@ export default function Home() {
                   alt="projects bubble"
                   height = {125}
                   width = {180}
-                  className="translate-y-12 translate-x-40 hover:translate-y-24"/>
+                  className="home-bubble translate-y-12 translate-x-38"/>
               </Link>
               <Image src ="/trixie-home.svg"
                 alt="trixie home"
@@ -58,7 +58,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-42">
+          <div className="mt-42 ml-24">
             <Footer/>
           </div>
         </div>

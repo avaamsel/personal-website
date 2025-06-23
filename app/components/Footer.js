@@ -26,7 +26,7 @@ export default function Footer() {
 
   return (
     <div>
-      <div className="flex justify-center mb-4 mt-2 ml-20 space-x-8">
+      <div className="flex justify-center mb-4 mt-2 space-x-8">
         <Image src={`${dot}`}
           alt="home dot1"
           height={22}
@@ -73,7 +73,7 @@ export default function Footer() {
           width={22}
           className="hover:-translate-y-1"/>
       </div>
-      <p className={`${textBottom} flex justify-center ml-20 text-[18px]`}>ava nunes  &copy; {new Date().getFullYear()}</p>
+      <p className={`${textBottom} flex justify-center text-[18px]`}>ava nunes  &copy; {new Date().getFullYear()}</p>
     </div>
   )
 }
