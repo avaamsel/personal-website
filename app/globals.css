@@ -167,7 +167,13 @@ body {
 .about {
   color: #D06F15;
   font-size: 1.75em;
-  margin-top: 16%;
+  margin-top: 6%;
+}
+
+.headers {
+  color: #D06F15;
+  font-size: 1.4em;
+  margin-bottom: 2%;
 }
 
 /* experience stylings */
@@ -188,7 +194,7 @@ body {
 .contact {
   color: #AC4976;
   font-size: 1.75em;
-  margin-top: 4%;
+  margin-top: 3%;
 }
 
 .box-name {

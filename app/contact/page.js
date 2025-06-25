@@ -13,7 +13,7 @@ export default function Contact() {
     const email = e.target.email.value;
 
     setShowPopup(true);
-    // setTimeout(() => setShowPopup(false), 3000);
+    setTimeout(() => setShowPopup(false), 3000);
     e.target.reset();
   };
 
