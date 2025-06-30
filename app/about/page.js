@@ -62,10 +62,76 @@ export default function About() {
             </div>
           </div>
           <p className="headers flex justify-center mt-18">my interests!</p>
-          <div>
-
+          <div className="flex ml-24 mb-10">
+            <Image src="/ava-elisey-dubs.svg"
+              alt="ava elisey and dubs"
+              width={380}
+              height={250}/>
+            <p className="ml-12 mt-12">one of my favorite things to do is spend time
+              <br/>with by best friend, <b className="text-[#D06F15]">elise!</b>
+              <br/>we like to watch bad movies, thrift, and 
+              <br/>make silly crafts together!</p>
           </div>
-          <div className="flex justify-center mb-4">
+          <div className="flex ml-24 mb-10">
+            <p>i'm a huge fan of <b className="text-[#D06F15]">grunge</b> music!
+              <br/>my mom was an original fan of the genre
+              <br/>in the 90s so i've been listening to grunge
+              <br/>since the womb.
+              <br/>my favorite bands are <b className="text-[#D06F15]">alice in chains</b>
+              <br/>and <b className="text-[#D06F15]">soundgarden!</b></p>
+            <div className="flex ml-12">
+              <Image src="/alice-about.svg"
+                alt="alice in chains"
+                width={200}
+                height={200}
+                className="-translate-y-10 mr-8"/>
+              <Image src="/soundgarden-about.svg"
+                alt="soundgarden"
+                width={200}
+                height={200}
+                className="translate-y-10"/>
+            </div>
+          </div>
+          <div>
+            <p className="ml-24">i'm also a big fan of <b className="text-[#D06F15]">pokemon!</b>
+              <br/>the gen 1 remakes are some of my favorite video games, with pokemon
+              <br/>platinum following close behind.
+              <br/>here's my ideal pokemon team, full of some of my favorites:
+            </p>
+            <div className="flex justify-center mt-10">
+              <Image src="/pokemon/empoleon.png" 
+                alt="empoleon"
+                width={150}
+                height={150}
+                unoptimized/>
+              <Image src="/pokemon/exeggutor.png" 
+                alt="exeggutor"
+                width={150}
+                height={150}
+                unoptimized/>
+              <Image src="/pokemon/gengar.png" 
+                alt="gengar"
+                width={150}
+                height={150}
+                unoptimized/>
+              <Image src="/pokemon/ampharos.png" 
+                alt="ampharos"
+                width={150}
+                height={150}
+                unoptimized/>
+              <Image src="/pokemon/garchomp.png" 
+                alt="garchomp"
+                width={150}
+                height={150}
+                unoptimized/>
+              <Image src="/pokemon/snorlax.png" 
+                alt="snorlax"
+                width={150}
+                height={150}
+                unoptimized/>
+            </div>
+          </div>
+          <div className="flex justify-center mb-4 mt-14">
             <Footer/>
           </div>
         </div>
