@@ -4,20 +4,20 @@ import Footer from "../components/Footer";
 
 export default function Projects() {
   return (
-    <div className="flex flex-col">
-      <div className="flex">
+    <div className="flex h-screen overflow-hidden">
+      <div className="flex-shrink-0">
         <Sidebar/>
-        <div className="flex-col ml-24">
-          <p className="projects">my projects!</p>
-          
-          <div className="flex space-x-20 ml-20 mt-16">
-
-          </div>
-
-          <Footer/>
-        </div>
       </div>
-              
+    
+      <div className="flex-1 overflow-y-scroll">
+        <div className="flex-col">
+          <p className="projects ml-24">my projects!</p>
+    
+          <div className="flex justify-center">
+            <Footer/>
+          </div>
+        </div>
+      </div>    
     </div>
   )
 }

@@ -156,7 +156,7 @@ body {
 .welcome {
   color: #618F40;
   font-size: 1.75em;
-  margin-top: 4%;
+  margin-top: 5%;
 }
 
 .home-bubble:hover {
@@ -167,10 +167,10 @@ body {
 .about {
   color: #D06F15;
   font-size: 1.75em;
-  margin-top: 6%;
+  margin-top: 4%;
 }
 
-.headers {
+.about-headers {
   color: #D06F15;
   font-size: 1.4em;
   margin-bottom: 2%;
@@ -180,21 +180,98 @@ body {
 .experience {
   color: #0B6860;
   font-size: 1.75em;
-  margin-top: 8%;
+  margin-top: 4%;
 }
+
+.experience-headers {
+  color: #0B6860;
+  font-size: 1.4em;
+  margin-bottom: 2%;
+}
+
+.experience-box1 {
+  border:3px solid #F9A75B;
+  border-radius: 28px;
+  width: 85%;
+  margin-bottom: 2%;
+  padding: 20px 20px;
+}
+
+.experience-box2 {
+  border:3px solid #C199DF;
+  border-radius: 28px;
+  width: 85%;
+  margin-bottom: 2%;
+  padding: 20px 20px;
+}
+
+.experience-box3 {
+  border:3px solid #DF99B9;
+  border-radius: 28px;
+  width: 85%;
+  margin-bottom: 2%;
+  padding: 20px 20px;
+}
+
+.experience-box4 {
+  border:3px solid #9DD575;
+  border-radius: 28px;
+  width: 85%;
+  margin-bottom: 2%;
+  padding: 20px 20px;
+}
+
+.experience-box5 {
+  border:3px solid #53B5AD;
+  border-radius: 28px;
+  width: 85%;
+  margin-bottom: 2%;
+  padding: 20px 20px;
+}
+
+.title1 {
+  color:#D06F15;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.title2 {
+  color:#6A3791;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.title3 {
+  color:#AC4976;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.title4 {
+  color:#618F40;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.title5 {
+  color:#0B6860;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
 
 /* projects stylings */
 .projects {
   color: #6A3791;
   font-size: 1.75em;
-  margin-top: 8%;
+  margin-top: 4%;
 }
 
 /* contact stylings */
 .contact {
   color: #AC4976;
   font-size: 1.75em;
-  margin-top: 3%;
+  margin-top: 4%;
 }
 
 .box-name {
@@ -237,7 +314,7 @@ body {
   border-radius: 12px;
   text-align: center;
   margin-left: 15%;
-  transform: translateY(-90px);
+  transform: translateY(-60px);
 }
 
 /*fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-2 rounded shadow-md transition-opacity">
