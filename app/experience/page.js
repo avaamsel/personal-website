@@ -12,8 +12,8 @@ export default function Experience() {
       <div className="flex-1 overflow-y-scroll">
         <div className="flex-col">
           <p className="experience ml-24">my experience!</p>
-          <div className="ml-24">
-            <a href="" target="blank">PDF of my current resume!</a>
+          <div className="ml-24 mt-4 mb-4">
+            <a href="/AvaNunesResume-June2025.pdf" target="blank" className="resume">PDF of my current resume!</a>
           </div>
 
           <div>
@@ -25,9 +25,7 @@ export default function Experience() {
 
               <div className="ml-6">
                 <p className="title1">narb</p>
-                <p className="text-[#F9A75B] font-semibold">june 2025 - present | mobile application developer intern</p>
-                <p><b>activities: </b>women in computing, cse undergraduate ta, web impact uw, seal undergraduate research assistant, phi alpha theta</p>
-                <p><b>awards: </b>2024 - 2025 annual dean's list</p>
+                <p className="text-[#F9A75B] font-semibold">mobile application developer intern | june 2025 - present</p>
               </div>
             </div>
 
@@ -40,15 +38,15 @@ export default function Experience() {
               <div>
                 <div className="ml-6">
                   <p className="title4">sensors, energy, & automation laboratory</p>
-                  <p className="text-[#9DD575] font-semibold">march 2025 - present | web team lead</p>
-                  <p><b>activities: </b>women in computing, cse undergraduate ta, web impact uw, seal undergraduate research assistant, phi alpha theta</p>
-                  <p><b>awards: </b>2024 - 2025 annual dean's list</p>
+                  <p className="text-[#9DD575] font-semibold">web team lead | march 2025 - present
+                  </p>
+                  <p className="box-text">leading a group of around 12 college and high school students in writing academic papers and developing the lab&apos;s productivity software, websites, and other software projects</p>
+                  <p className="box-text">maintaining and improving the seal and uw industrial training and assessment center websites and servers</p>
                 </div>
 
                 <div className="ml-6 mt-2">
-                  <p className="text-[#9DD575] font-semibold">january 2025 - present | lab associate + research assistant</p>
-                  <p><b>activities: </b>women in computing, cse undergraduate ta, web impact uw, seal undergraduate research assistant, phi alpha theta</p>
-                  <p><b>awards: </b>2024 - 2025 annual dean's list</p>
+                  <p className="text-[#9DD575] font-semibold">lab associate + research assistant | january 2025 - present</p>
+                  <p className="box-text">conducting research on the design and implementation of novel custom gpts and its implications for human-ai interaction</p>
                 </div>
               </div>
             </div>
@@ -61,9 +59,9 @@ export default function Experience() {
 
               <div className="ml-6">
                 <p className="title3">web impact uw</p>
-                <p className="text-[#DF99B9] font-semibold">october 2024 - present | web developer</p>
-                <p><b>activities: </b>women in computing, cse undergraduate ta, web impact uw, seal undergraduate research assistant, phi alpha theta</p>
-                <p><b>awards: </b>2024 - 2025 annual dean's list</p>
+                <p className="text-[#DF99B9] font-semibold">web developer & project lead | october 2024 - present</p>
+                <p className="box-text">creating and deploying responsive websites for clubs and local businesses in collaboration with design teams to inform user-friendly and accessible ui/ux</p>
+                <p className="box-text">leading development of projects and providing guidance in tools like next.js, sanity, git, and javascript</p>
               </div>
             </div>
 
@@ -75,9 +73,10 @@ export default function Experience() {
 
               <div className="ml-6">
                 <p className="title2">paul g. allen school of computer science & engineering</p>
-                <p className="text-[#C199DF] font-semibold">september 2024 - december 2024 | cse 190b undergraduate teaching assistant</p>
-                <p><b>activities: </b>women in computing, cse undergraduate ta, web impact uw, seal undergraduate research assistant, phi alpha theta</p>
-                <p><b>awards: </b>2024 - 2025 annual dean's list</p>
+                <p className="text-[#C199DF] font-semibold">cse 190b undergraduate teaching assistant
+                  <br/>september 2024 - december 2024</p>
+                <p className="box-text">focused on a group of 30 computer science students from a direct-admit class of 320+</p>
+                <p className="box-text">prepared and provided activities pertaining to academic success, career preparation, personal growth, as well as inclusive behavior and responsibility in computer science</p>
               </div>
             </div>
 
@@ -89,9 +88,10 @@ export default function Experience() {
 
               <div className="ml-6">
                 <p className="title1">self-employed</p>
-                <p className="text-[#F9A75B] font-semibold">september 2022 - september 2024 | math & computer science tutor</p>
-                <p><b>activities: </b>women in computing, cse undergraduate ta, web impact uw, seal undergraduate research assistant, phi alpha theta</p>
-                <p><b>awards: </b>2024 - 2025 annual dean's list</p>
+                <p className="text-[#F9A75B] font-semibold">math & computer science tutor
+                  <br/>september 2022 - september 2024</p>
+                <p className="box-text">tutored high school students primarily in math and computer science</p>
+                <p className="box-text">specialized in geometry, algebra ii, trigonometry, and java</p>
               </div>
             </div>
           </div>
@@ -105,9 +105,9 @@ export default function Experience() {
                 height={125}/>
               <div className="ml-6">
                 <p className="title5">university of washington seattle</p>
-                <p className="text-[#53B5AD] font-semibold">september 2023 - june 2027 | computer science + history</p>
-                <p><b>activities: </b>women in computing, cse undergraduate ta, web impact uw, seal undergraduate research assistant, phi alpha theta</p>
-                <p><b>awards: </b>2024 - 2025 annual dean's list</p>
+                <p className="text-[#53B5AD] font-semibold">computer science + history | september 2023 - june 2027</p>
+                <p className="box-text"><b>activities: </b>women in computing, cse undergraduate ta, web impact uw, seal undergraduate research assistant, phi alpha theta</p>
+                <p className="box-text"><b>awards: </b>2024 - 2025 annual dean's list</p>
               </div>
             </div>
 
@@ -120,13 +120,13 @@ export default function Experience() {
               <div className="ml-6">
                 <p className="title5">moses lake high school</p>
                 <p className="text-[#53B5AD] font-semibold">august 2019 - june 2023 | 4.0 gpa</p>
-                <p><b>activities: </b>national honor society, knowledge bowl, varisty tennis, math team, mu alpha theta, key club, senior senator</p>
-                <p><b>awards: </b>mlhs top 10, ap scholar with distinction, rural and small town recognition award, outstanding senior - math, outstanding senior - english</p>
+                <p className="box-text"><b>activities: </b>national honor society, knowledge bowl, varisty tennis, math team, mu alpha theta, key club, senior senator</p>
+                <p className="box-text"><b>awards: </b>mlhs top 10, ap scholar with distinction, rural and small town recognition award, outstanding senior - math, outstanding senior - english</p>
               </div>
             </div>
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center mb-4">
             <Footer/>
           </div>
         </div>

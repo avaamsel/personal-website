@@ -259,6 +259,19 @@ body {
   font-size: 1.1em;
 }
 
+.resume {
+  font-weight: bold;
+  color: #53B5AD;
+}
+
+.resume:hover {
+  color: #0B6860;
+}
+
+.box-text {
+  font-size: 0.9em;
+  margin-bottom: 1%;
+}
 
 /* projects stylings */
 .projects {
