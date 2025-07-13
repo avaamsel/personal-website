@@ -26,6 +26,7 @@ export default function Experience() {
               <div className="ml-6">
                 <p className="title1">narb</p>
                 <p className="text-[#F9A75B] font-semibold">mobile application developer intern | june 2025 - present</p>
+                <p className="box-text">working to develop nhabits!</p>
               </div>
             </div>
 
@@ -94,6 +95,20 @@ export default function Experience() {
                 <p className="box-text">specialized in geometry, algebra ii, trigonometry, and java</p>
               </div>
             </div>
+          </div>
+
+          <p className="experience-headers flex justify-center mt-8">my skills!</p>
+          <div>
+            <div className="ml-24 experience-box5">
+              <p className="title5">programming languages:</p>
+              <p>java, javascript, typescript, c, c++, python, sql, html, css</p>
+            </div>
+            
+            <div className="ml-24 experience-box5">
+              <p className="title5">frameworks + tools:</p>
+              <p>next.js, react, figma, sanity, git, junit, bootstrap, latex, react native</p>
+            </div>
+            
           </div>
 
           <p className="experience-headers flex justify-center mt-8">education!</p>
