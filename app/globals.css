@@ -280,6 +280,20 @@ body {
   margin-top: 4%;
 }
 
+.project-heading {
+  color: #6A3791;
+  font-weight: bold;
+}
+
+.project-text {
+  font-size: 0.9em;
+}
+
+.project-sub {
+  font-size: 0.9em;
+  color: #C199DF;
+}
+
 /* contact stylings */
 .contact {
   color: #AC4976;
@@ -329,6 +343,3 @@ body {
   margin-left: 15%;
   transform: translateY(-60px);
 }
-
-/*fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-2 rounded shadow-md transition-opacity">
- */
