@@ -286,12 +286,21 @@ body {
 }
 
 .project-text {
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 .project-sub {
   font-size: 0.9em;
   color: #C199DF;
+}
+
+.repo-link {
+  font-size: 0.8em;
+  color: #C199DF;
+}
+
+.repo-link:hover {
+  color: #6A3791;
 }
 
 /* contact stylings */
