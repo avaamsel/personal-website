@@ -1,6 +1,7 @@
 "use client"
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Sidebar() {
   const pathname = usePathname();
@@ -62,11 +63,11 @@ export default function Sidebar() {
               width={12}
               className="hover:-translate-y-1"/>
           </div>
-          <a href="/about" className="navbar-about inline-block">about me!</a>
-          <a href="/experience" className="navbar-experience inline-block">experience!</a>
-          <a href="/projects" className="navbar-projects inline-block">projects!</a>
-          <a href="/contact" className="navbar-contact inline-block">contact me!</a>
-          <a href="/" className="navbar-home inline-block">home!</a>
+          <Link href="/about" className="navbar-about inline-block">about me!</Link>
+          <Link href="/experience" className="navbar-experience inline-block">experience!</Link>
+          <Link href="/projects" className="navbar-projects inline-block">projects!</Link>
+          <Link href="/contact" className="navbar-contact inline-block">contact me!</Link>
+          <Link href="/" className="navbar-home inline-block">home!</Link>
 
           <div className="mt-auto">
             <div className="bubble flex justify-center mb-4">

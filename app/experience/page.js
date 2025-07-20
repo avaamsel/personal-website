@@ -13,7 +13,7 @@ export default function Experience() {
         <div className="flex-col">
           <p className="experience ml-24">my experience!</p>
           <div className="ml-24 mt-4 mb-4">
-            <a href="/AvaNunesResume-June2025.pdf" target="blank" className="resume">PDF of my current resume!</a>
+            <a href="/AvaNunesResume-July2025.pdf" target="blank" className="resume">PDF of my current resume!</a>
           </div>
 
           <div>
@@ -122,7 +122,7 @@ export default function Experience() {
                 <p className="title5">university of washington seattle</p>
                 <p className="text-[#53B5AD] font-semibold">computer science + history | september 2023 - june 2027</p>
                 <p className="box-text"><b>activities: </b>women in computing, cse undergraduate ta, web impact uw, seal undergraduate research assistant, phi alpha theta</p>
-                <p className="box-text"><b>awards: </b>2024 - 2025 annual dean's list</p>
+                <p className="box-text"><b>awards: </b>2024 - 2025 annual dean&apos;s list</p>
               </div>
             </div>
 

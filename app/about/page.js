@@ -26,11 +26,11 @@ export default function About() {
             </div>
             <div className="mt-24 ml-12">
                 <p className="text-body mb-2">my name is ava!</p>
-                <p className="text-body mb-2">i'm a current junior at the univerity of washington's
+                <p className="text-body mb-2">i&apos;m a current junior at the univerity of washington&apos;s
                   <br/>allen school, majoring in <b className="text-[#D06F15]">computer science</b> and
                   <br/>minoring in <b className="text-[#D06F15]">history.</b>
                 </p>
-                <p className="text-body mb-2">i'm expected to graduate in <b className="text-[#D06F15]">spring of 2027,</b>
+                <p className="text-body mb-2">i&apos;m expected to graduate in <b className="text-[#D06F15]">spring of 2027,</b>
                   <br/>with aspirations of pursuing a career in <b className="text-[#D06F15]">full-stack</b>
                   <br/>and <b className="text-[#D06F15]">software development!</b></p>
             </div>
@@ -75,9 +75,9 @@ export default function About() {
                 <br/>make silly crafts together!</p>
           </div>            
           <div className="flex ml-24 mb-10">
-              <p>i'm a huge fan of <b className="text-[#D06F15]">grunge</b> music!
+              <p>i&apos;m a huge fan of <b className="text-[#D06F15]">grunge</b> music!
                 <br/>my mom was an original fan of the genre
-                <br/>in the 90s so i've been listening to grunge
+                <br/>in the 90s so i&apos;ve been listening to grunge
                 <br/>since the womb.
                 <br/>my favorite bands are <b className="text-[#D06F15]">alice in chains</b>
                 <br/>and <b className="text-[#D06F15]">soundgarden!</b></p>
@@ -95,11 +95,11 @@ export default function About() {
               </div>
           </div>
           <div>
-            <p className="ml-24">i'm also a big fan of <b className="text-[#D06F15]">pokemon!</b>
+            <p className="ml-24">im also a big fan of <b className="text-[#D06F15]">pokemon!</b>
                 <br/>the gen 1 remakes are some of my favorite video games, with pokemon
                 <br/>platinum following close behind.
                 <br/>i also really like the <b className="text-[#D06F15]">red dead redemption series</b> and <b className="text-[#D06F15]">little big planet!</b>
-                <br/>here's my ideal pokemon team, full of some of my favorites:
+                <br/>here&apos;s my ideal pokemon team, full of some of my favorites:
               </p>
               <div className="flex justify-center mt-10">
                 <Image src="/pokemon/empoleon.png" 

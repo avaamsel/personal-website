@@ -1,6 +1,7 @@
 import Sidebar from "../components/Sidebar";
 import Image from "next/image";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -23,9 +24,9 @@ export default function Projects() {
                 <p className="project-sub font-semibold">next.js, javascript, html, css, figma, vercel</p>
                 <p className="project-text mb-2">my personal website was blocked out through figma to establish the 
                   <br/>overall layout and to create many of the images utilized!</p>
-                <p className="project-text">the color changing sidebar utilize's next.js's usepathname function 
+                <p className="project-text">the color changing sidebar utilize&apos;s next.js&apos;s usepathname function 
                   <br/> to allow for more personality within the pages.</p>
-                <a className="repo-link font-semibold" href="https://github.com/avaamsel/personal-website" target="blank">my personal website's repo!</a>
+                <Link className="repo-link font-semibold" href="https://github.com/avaamsel/personal-website" target="blank">my personal website&apos;s repo!</Link>
               </div>
             </div>
 
@@ -41,7 +42,6 @@ export default function Projects() {
                   <br/> creation, login authentication, and balance management.</p>
                 <p className="project-text">created efficient flight search algorithms that returned sorted
                   <br/>flight itineraries based on dynamic user-specified criteria.</p>
-                <a className="repo-link font-semibold" href="/" target="blank">flights app's repo!</a>
               </div>
               <Image src="/projects/project-flights.svg"
                 alt="flights app"
@@ -64,9 +64,9 @@ export default function Projects() {
                   <br/>tune their search for club events.</p>
                 
                 <div className="flex">
-                  <a className="repo-link font-semibold" href="https://github.com/webimpactuw/neurobiology-club" target="blank">neurobiology's repo!</a> 
+                  <Link className="repo-link font-semibold" href="https://github.com/webimpactuw/neurobiology-club" target="blank">neurobiology&apos;s repo!</Link> 
                   <p className="project-sub font-semibold ml-2 mr-2 -translate-y-1">|</p>
-                  <a className="repo-link font-semibold" href="https://neurobiology-club.vercel.app/" target="blank">neurobiogy's website!</a> 
+                  <Link className="repo-link font-semibold" href="https://neurobiology-club.vercel.app/" target="blank">neurobiology&apos;s website!</Link> 
                 </div>
               </div>
             </div>
@@ -103,7 +103,7 @@ export default function Projects() {
                   <br/>markers and dynamic map overlays.</p>
                 <p className="project-text">integrated client-server communication via custom rest api routes,
                   <br/> handling user queries and delivering json responses.</p>
-                <a className="repo-link font-semibold" href="/" target="blank">campus paths' repo!</a>
+                {/* <Link className="repo-link font-semibold" href="/" target="blank">campus paths&apos; repo!</Link> */}
               </div> 
             </div>
           </div>
