@@ -15,17 +15,15 @@ export default function Projects() {
           <p className="projects ml-24">my projects!</p>
           <div className="ml-24 mt-6 mb-8">
           <div className="flex mb-12">
-              <div className="mr-10">
+              <div className="mr-17">
                 <p className="project-heading">pathpal | narbhacks 2025 | july 2025</p>
                 <p className="project-sub font-semibold"> typescript, react, react native, convex, leaflet </p>
                 <p className="project-text mb-2">designed a cross-platform social application using react, next.js, 
                   <br/> and react native, for narbhacks!</p>
-                <p className="project-text mb-2">engineered a real-time backend with convex, implementing secure,
-                  <br/> scalable apis for user authentication, path management and 
-                  <br/> creation, as well as location tracking.</p>
                 <p className="project-text">integrated leaflet to provide dynamic, user-friendly mapping
-                  <br/> functionality, supporting features like location display, path
-                  <br/>  visualization, and custom map markers.</p>
+                  <br/> functionality, supporting features like location display and path
+                  <br/>  visualization.</p>
+                  <Link className="repo-link font-semibold" href="https://github.com/avaamsel/narbhacks-pathpal" target="blank">pathpal&apos;s repo!</Link>
               </div>
               <Image src="/projects/project-pathpal.svg"
                 alt="pathpal"
