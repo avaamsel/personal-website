@@ -3,18 +3,35 @@ import { useState } from "react";
 import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar"
 import Image from "next/image";
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const [showPopup, setShowPopup] = useState(false);
 
+  const SERVICE_ID = 'service_95anskc';
+  const NOTIFY_TEMPLATE_ID = 'template_lka41ji';
+  const AUTOREPLY_TEMPLATE_ID = 'template_47uytej';
+  const PUBLIC_KEY = 'C6S5vLSS8MS2nfB72';
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const name = e.target.name.value;
-    const email = e.target.email.value;
-
-    setShowPopup(true);
-    // setTimeout(() => setShowPopup(false), 5000);
-    e.target.reset();
+    emailjs.sendForm(SERVICE_ID, NOTIFY_TEMPLATE_ID, e.target, PUBLIC_KEY)
+      .then(() => {
+        emailjs.sendForm(SERVICE_ID, AUTOREPLY_TEMPLATE_ID, e.target, PUBLIC_KEY)
+          .then(() => {
+            setShowPopup(true);
+            setTimeout(() => setShowPopup(false), 5000);
+            e.target.reset();
+          })
+          .catch((error) => {
+            alert('Failed to send auto-reply. Please try again later.');
+            console.error('EmailJS auto-reply error:', error);
+          });
+      })
+      .catch((error) => {
+        alert('Failed to send message. Please try again later.');
+        console.error('EmailJS notification error:', error);
+      });
   };
 
   return (
@@ -73,5 +90,3 @@ export default function Contact() {
     </div>
   );
 }
-
-// want to add a message when submitted -- like a pop up at the bottom of the screen
