@@ -46,7 +46,7 @@ export default function Sidebar() {
                   alt="toggle menu"
                   height={12}
                   width={12}
-                  className="-translate-y-2 hover:-translate-y-1"
+                  className="-translate-y-1 hover:-translate-y-1"
                 />
               ) : (
                 <div className="flex flex-col space-y-5">

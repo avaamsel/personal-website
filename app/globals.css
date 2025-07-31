@@ -9,8 +9,14 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-lexend);
-  font-size: 1.7em;
+  font-size: 1.575em;
   cursor: default;
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.7em;
+  }
 }
 
 .text-body {
@@ -144,12 +150,13 @@ body {
   padding-bottom: 12px;
 }
 
-.navbar-home:hover {
-  color: #618F40;
-  border: 3px solid #618F40;
-  border-radius: 32px;
-  padding: 6px 16px;
-  background-color: white;
+/* Disable navbar hover animations */
+.no-hover:hover {
+  color: inherit !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: inherit !important;
+  background-color: transparent !important;
 }
 
 .navbar-home-bottom {
@@ -174,14 +181,6 @@ body {
   padding-bottom: 12px;
 }
 
-.navbar-about:hover {
-  color: #D06F15;
-  border: 3px solid #D06F15;
-  border-radius: 32px;
-  padding: 6px 16px;
-  background-color: white;
-}
-
 .navbar-about-bottom {
   color: #D06F15;
 }
@@ -198,14 +197,6 @@ body {
 .navbar-experience {
   padding-top: 12px;
   padding-bottom: 12px;
-}
-
-.navbar-experience:hover {
-  color: #0B6860;
-  border: 3px solid #0B6860;
-  border-radius: 32px;
-  padding: 6px 16px;
-  background-color: white;
 }
 
 .navbar-experience-bottom {
@@ -226,14 +217,6 @@ body {
   padding-bottom: 12px;
 }
 
-.navbar-projects:hover {
-  color: #6A3791;
-  border: 3px solid #6A3791;
-  border-radius: 32px;
-  padding: 6px 16px;
-  background-color: white;
-}
-
 .navbar-projects-bottom {
   color: #6A3791;
 }
@@ -250,14 +233,6 @@ body {
 .navbar-contact {
   padding-top: 12px;
   padding-bottom: 12px;
-}
-
-.navbar-contact:hover {
-  color: #AC4976;
-  border: 3px solid #AC4976;
-  border-radius: 32px;
-  padding: 6px 16px;
-  background-color: white;
 }
 
 .navbar-contact-bottom {
@@ -422,6 +397,39 @@ body {
   margin-top: 4%;
 }
 
+/* Mobile contact page adjustments */
+@media (max-width: 1024px) {
+  .contact {
+    margin-left: 1.5rem !important;
+  }
+  
+  .box-name {
+    width: 100% !important;
+    margin: 0 auto 1rem auto !important;
+    display: block !important;
+  }
+  
+  .box-email {
+    width: 100% !important;
+    margin: 0 auto 0.6rem auto !important;
+    display: block !important;
+  }
+  
+  .box-message {
+    width: 100% !important;
+    margin: 0 auto 2rem auto !important;
+    display: block !important;
+  }
+  
+  .submit {
+    transform: none !important;
+    margin: 0 auto !important;
+    display: block !important;
+    width: 140px !important;
+    height: 85px !important;
+  }
+}
+
 .box-name {
   width: 80%;
   padding: 12px;
@@ -463,4 +471,13 @@ body {
   text-align: center;
   margin-left: 15%;
   transform: translateY(-60px);
+}
+
+/* Mobile popup message adjustments */
+@media (max-width: 1024px) {
+  .message {
+    transform: translateY(-64px) !important;
+    width: 90% !important;
+    margin-left: 5% !important;
+  }
 }

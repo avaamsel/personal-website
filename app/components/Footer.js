@@ -1,9 +1,22 @@
 "use client"
 import { usePathname } from "next/navigation"
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 export default function Footer() {
   const pathname = usePathname();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   let textBottom = "";
   let dot = "";
@@ -52,26 +65,30 @@ export default function Footer() {
           height={22}
           width={22}
           className="hover:-translate-y-1"/>
-        <Image src={`${dot}`}
-          alt="home dot"
-          height={22}
-          width={22}
-          className="hover:-translate-y-1"/>
-        <Image src={`${dot}`}
-          alt="home dot"
-          height={22}
-          width={22}
-          className="hover:-translate-y-1"/>
-        <Image src={`${dot}`}
-          alt="home dot"
-          height={22}
-          width={22}
-          className="hover:-translate-y-1"/>
-        <Image src={`${dot}`}
-          alt="home dot"
-          height={22}
-          width={22}
-          className="hover:-translate-y-1"/>
+        {!isMobile && (
+          <>
+            <Image src={`${dot}`}
+              alt="home dot"
+              height={22}
+              width={22}
+              className="hover:-translate-y-1"/>
+            <Image src={`${dot}`}
+              alt="home dot"
+              height={22}
+              width={22}
+              className="hover:-translate-y-1"/>
+            <Image src={`${dot}`}
+              alt="home dot"
+              height={22}
+              width={22}
+              className="hover:-translate-y-1"/>
+            <Image src={`${dot}`}
+              alt="home dot"
+              height={22}
+              width={22}
+              className="hover:-translate-y-1"/>
+          </>
+        )}
       </div>
       <p className={`${textBottom} flex justify-center text-[18px]`}>ava nunes  &copy; {new Date().getFullYear()}</p>
     </div>
