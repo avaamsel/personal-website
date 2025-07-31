@@ -1,10 +1,24 @@
 "use client"
 import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Sidebar() {
   const pathname = usePathname();
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   let sideBG = "";
   let textBottom = "";
@@ -32,44 +46,127 @@ export default function Sidebar() {
     dot = "/dot-contact.svg";
   }
 
+  const toggleSidebar = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   if (pathname != "/studio") {
     return (
       <div>
-        <div className={`${sideBG} flex flex-col items-center`}>
-          <div className="flex justify-center mb-10 mt-2 space-x-8">
-            <Image src={`${dot}`}
-              alt="dot"
-              height={12}
-              width={12}
-              className="hover:-translate-y-1"/>
-            <Image src={`${dot}`}
-              alt="dot"
-              height={12}
-              width={12}
-              className="hover:-translate-y-1"/>
-            <Image src={`${dot}`}
-              alt="dot"
-              height={12}
-              width={12}
-              className="hover:-translate-y-1"/>
-            <Image src={`${dot}`}
-              alt="dot"                    
-              height={12}
-              width={12}
-              className="hover:-translate-y-1"/>
-            <Image src={`${dot}`}
-              alt="dot"
-              height={12}
-              width={12}
-              className="hover:-translate-y-1"/>
+        <div className={`${sideBG} ${isMobile ? 'sidebar-mobile' : ''} ${isMobile && isExpanded ? 'expanded' : ''} flex flex-col items-center`}>
+          {isMobile && (
+            <button 
+              onClick={toggleSidebar}
+              className="toggle-button"
+              aria-label={isExpanded ? "Collapse sidebar" : "Expand sidebar"}
+            >
+              {isExpanded ? (
+                <Image 
+                  src={`${dot}`}
+                  alt="toggle menu"
+                  height={12}
+                  width={12}
+                  className="-translate-y-2 hover:-translate-y-1"
+                />
+              ) : (
+                <div className="flex flex-col space-y-5">
+                  <Image 
+                    src={`${dot}`}
+                    alt="toggle menu"
+                    height={12}
+                    width={12}
+                    className="hover:-translate-y-1"
+                  />
+                  <Image 
+                    src={`${dot}`}
+                    alt="toggle menu"
+                    height={12}
+                    width={12}
+                    className="hover:-translate-y-1"
+                  />
+                </div>
+              )}
+            </button>
+          )}
+          
+          <div className={`nav-links ${isMobile && isExpanded ? 'flex flex-col items-center' : 'block'}`}>
+            <div className="flex justify-center mb-10 mt-2">
+              {isMobile && isExpanded ? (
+                <>
+                  <button onClick={toggleSidebar} aria-label="Close sidebar" className="bg-transparent border-none p-0 m-0">
+                    <Image src={`${dot}`}
+                      alt="dot"
+                      height={12}
+                      width={12}
+                      className="-translate-y-1 hover:-translate-y-1"/>
+                  </button>
+                  <button onClick={toggleSidebar} aria-label="Close sidebar" className="bg-transparent border-none p-0 m-0 ml-8">
+                    <Image src={`${dot}`}
+                      alt="dot"
+                      height={12}
+                      width={12}
+                      className="-translate-y-1 hover:-translate-y-1"/>
+                  </button>
+                  <button onClick={toggleSidebar} aria-label="Close sidebar" className="bg-transparent border-none p-0 m-0 ml-8">
+                    <Image src={`${dot}`}
+                      alt="dot"
+                      height={12}
+                      width={12}
+                      className="-translate-y-1 hover:-translate-y-1"/>
+                  </button>
+                  <button onClick={toggleSidebar} aria-label="Close sidebar" className="bg-transparent border-none p-0 m-0 ml-8">
+                    <Image src={`${dot}`}
+                      alt="dot"
+                      height={12}
+                      width={12}
+                      className="-translate-y-1 hover:-translate-y-1"/>
+                  </button>
+                  <button onClick={toggleSidebar} aria-label="Close sidebar" className="bg-transparent border-none p-0 m-0 ml-8">
+                    <Image src={`${dot}`}
+                      alt="dot"
+                      height={12}
+                      width={12}
+                      className="-translate-y-1 hover:-translate-y-1"/>
+                  </button>
+                </>
+              ) : (
+                <>
+                  <Image src={`${dot}`}
+                    alt="dot"
+                    height={12}
+                    width={12}
+                    className="-translate-y-1 hover:-translate-y-1"/>
+                  <Image src={`${dot}`}
+                    alt="dot"
+                    height={12}
+                    width={12}
+                    className="-translate-y-1 hover:-translate-y-1 ml-8"/>
+                  <Image src={`${dot}`}
+                    alt="dot"
+                    height={12}
+                    width={12}
+                    className="-translate-y-1 hover:-translate-y-1 ml-8"/>
+                  <Image src={`${dot}`}
+                    alt="dot"                    
+                    height={12}
+                    width={12}
+                    className="-translate-y-1 hover:-translate-y-1 ml-8"/>
+                  <Image src={`${dot}`}
+                    alt="dot"
+                    height={12}
+                    width={12}
+                    className="-translate-y-1 hover:-translate-y-1 ml-8"/>
+                </>
+              )}
+            </div>
+            <Link href="/about" className="navbar-about inline-block w-full text-center">about me!</Link>
+            <Link href="/experience" className="navbar-experience inline-block w-full text-center">experience!</Link>
+            <Link href="/projects" className="navbar-projects inline-block w-full text-center">projects!</Link>
+            <Link href="/contact" className="navbar-contact inline-block w-full text-center">contact me!</Link>
+            <Link href="/" className="navbar-home inline-block w-full text-center">home!</Link>
           </div>
-          <Link href="/about" className="navbar-about inline-block">about me!</Link>
-          <Link href="/experience" className="navbar-experience inline-block">experience!</Link>
-          <Link href="/projects" className="navbar-projects inline-block">projects!</Link>
-          <Link href="/contact" className="navbar-contact inline-block">contact me!</Link>
-          <Link href="/" className="navbar-home inline-block">home!</Link>
 
-          <div className="mt-auto">
+          <div className={`bubble-container ${isMobile ? '' : 'block'} mt-auto`}>
             <div className="bubble flex justify-center mb-4">
               <Image src={`${avaBubble}`}
                 alt="ava bubble"

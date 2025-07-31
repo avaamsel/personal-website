@@ -7,13 +7,16 @@ import Link from "next/link";
 // need to make the right side scroll and the left sidebar completely static
 export default function Home() {
   return (
-    <div className="flex flex-col">
-      <div className = "flex">
+    <div className="flex h-screen overflow-hidden">
+      <div className = "flex-shrink-0">
         <HomeSidebar/>
+      </div>
+
+      <div className="flex-1 overflow-y-scroll">
         <div className="flex-col ml-24">
           <p className="welcome">welcome!</p>
           <p className="text-body">thanks for visiting my website! feel free to click around and get to know me!</p>
-
+          
           <div className="flex space-x-20 ml-20 mt-18">
             <div className="flex-col">
               <Link href="/about">
@@ -43,7 +46,7 @@ export default function Home() {
                 width = {224}/>
             </div>
 
-            <div className="flex-col">
+             <div className="flex-col">
               <Link href="/projects">
                 <Image src ="/projects-bubble.svg"
                   alt="projects bubble"
