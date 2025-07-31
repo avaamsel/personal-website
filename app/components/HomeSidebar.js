@@ -24,6 +24,12 @@ export default function Sidebar() {
     setIsExpanded(!isExpanded);
   };
 
+  const handleLinkClick = (href) => {
+    if (href === pathname && isMobile && isExpanded) {
+      setIsExpanded(false);
+    }
+  };
+
   if (pathname != "/studio") {
     return (
       <div>
@@ -92,10 +98,10 @@ export default function Sidebar() {
                 className="hover:-translate-y-1 ml-8"/>
             </div>
 
-            <Link href="/about" className="navbar-about inline-block w-full text-center">about me!</Link>
-            <Link href="/experience" className="navbar-experience inline-block w-full text-center">experience!</Link>
-            <Link href="/projects" className="navbar-projects inline-block w-full text-center">projects!</Link>
-            <Link href="/contact" className="navbar-contact inline-block w-full text-center">contact me!</Link>
+            <Link href="/about" className="navbar-about inline-block text-center" onClick={() => handleLinkClick('/about')}>about me!</Link>
+            <Link href="/experience" className="navbar-experience inline-block text-center" onClick={() => handleLinkClick('/experience')}>experience!</Link>
+            <Link href="/projects" className="navbar-projects inline-block text-center" onClick={() => handleLinkClick('/projects')}>projects!</Link>
+            <Link href="/contact" className="navbar-contact inline-block text-center" onClick={() => handleLinkClick('/contact')}>contact me!</Link>
           </div>
           
           <div className={`bubble-container ${isMobile ? '' : 'block'} mt-auto`}>

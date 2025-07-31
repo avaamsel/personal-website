@@ -13,11 +13,11 @@ export default function Home() {
       </div>
 
       <div className="flex-1 overflow-y-scroll">
-        <div className="flex-col ml-24">
+        <div className="flex-col ml-24 md:ml-24 ml-4">
           <p className="welcome">welcome!</p>
           <p className="text-body">thanks for visiting my website! feel free to click around and get to know me!</p>
           
-          <div className="flex space-x-20 ml-20 mt-18">
+          <div className="flex space-x-20 ml-20 mt-18 md:ml-20 ml-4">
             <div className="flex-col">
               <Link href="/about">
                 <Image src ="/about-bubble.svg"
@@ -61,7 +61,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-42 ml-24">
+          <div className="mt-42 ml-24 md:ml-24 ml-4">
             <Footer/>
           </div>
         </div>

@@ -25,7 +25,7 @@ export default function Experience() {
 
               <div className="ml-6">
                 <p className="title1">narb</p>
-                <p className="text-[#F9A75B] font-semibold">mobile application developer intern | june 2025 - present</p>
+                <p className="text-[#F9A75B] font-semibold">software developer intern | june 2025 - present</p>
                 <p className="box-text">working to develop nhabits!</p>
               </div>
             </div>
