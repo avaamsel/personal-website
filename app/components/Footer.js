@@ -67,26 +67,26 @@ export default function Footer() {
           className="hover:-translate-y-1"/>
         {!isMobile && (
           <>
-            <Image src={`${dot}`}
-              alt="home dot"
-              height={22}
-              width={22}
-              className="hover:-translate-y-1"/>
-            <Image src={`${dot}`}
-              alt="home dot"
-              height={22}
-              width={22}
-              className="hover:-translate-y-1"/>
-            <Image src={`${dot}`}
-              alt="home dot"
-              height={22}
-              width={22}
-              className="hover:-translate-y-1"/>
-            <Image src={`${dot}`}
-              alt="home dot"
-              height={22}
-              width={22}
-              className="hover:-translate-y-1"/>
+        <Image src={`${dot}`}
+          alt="home dot"
+          height={22}
+          width={22}
+          className="hover:-translate-y-1"/>
+        <Image src={`${dot}`}
+          alt="home dot"
+          height={22}
+          width={22}
+          className="hover:-translate-y-1"/>
+        <Image src={`${dot}`}
+          alt="home dot"
+          height={22}
+          width={22}
+          className="hover:-translate-y-1"/>
+        <Image src={`${dot}`}
+          alt="home dot"
+          height={22}
+          width={22}
+          className="hover:-translate-y-1"/>
           </>
         )}
       </div>
