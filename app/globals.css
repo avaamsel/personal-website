@@ -150,13 +150,12 @@ body {
   padding-bottom: 12px;
 }
 
-/* Disable navbar hover animations */
-.no-hover:hover {
-  color: inherit !important;
-  border: none !important;
-  border-radius: 0 !important;
-  padding: inherit !important;
-  background-color: transparent !important;
+.navbar-home:hover, .navbar-home:active {
+  color: #618F40;
+  border: 3px solid #618F40;
+  border-radius: 32px;
+  padding: 6px 18px;
+  background-color: white;
 }
 
 .navbar-home-bottom {
@@ -181,6 +180,14 @@ body {
   padding-bottom: 12px;
 }
 
+.navbar-about:hover, .navbar-about:active {
+  color: #D06F15;
+  border: 3px solid #D06F15;
+  border-radius: 32px;
+  padding: 6px 18px;
+  background-color: white;
+}
+
 .navbar-about-bottom {
   color: #D06F15;
 }
@@ -197,6 +204,14 @@ body {
 .navbar-experience {
   padding-top: 12px;
   padding-bottom: 12px;
+}
+
+.navbar-experience:hover, .navbar-experience:active {
+  color: #0B6860;
+  border: 3px solid #0B6860;
+  border-radius: 32px;
+  padding: 6px 18px;
+  background-color: white;
 }
 
 .navbar-experience-bottom {
@@ -217,6 +232,14 @@ body {
   padding-bottom: 12px;
 }
 
+.navbar-projects:hover, .navbar-projects:active {
+  color: #6A3791;
+  border: 3px solid #6A3791;
+  border-radius: 32px;
+  padding: 6px 18px;
+  background-color: white;
+}
+
 .navbar-projects-bottom {
   color: #6A3791;
 }
@@ -233,6 +256,14 @@ body {
 .navbar-contact {
   padding-top: 12px;
   padding-bottom: 12px;
+}
+
+.navbar-contact:hover, .navbar-contact:active {
+  color: #AC4976;
+  border: 3px solid #AC4976;
+  border-radius: 32px;
+  padding: 6px 18px;
+  background-color: white;
 }
 
 .navbar-contact-bottom {
@@ -388,6 +419,12 @@ body {
 
 .repo-link:hover {
   color: #6A3791;
+}
+
+/* Project text container widths */
+.project-text-container {
+  width: 720px;
+  flex-shrink: 0;
 }
 
 /* contact stylings */

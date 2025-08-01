@@ -180,18 +180,21 @@ export default function Sidebar() {
                 height={100}
                 width={100}/>
             </div>
-            <div className={`${textBottom} flex justify-center`}>
-              <a href="https://github.com/avaamsel" target="_blank" rel="noopener noreferrer"
-                className="mr-8 text-[22px] hover:-translate-y-1">
-                github
-              </a>
-              <a href="https://www.linkedin.com/in/nunesava" target="_blank" rel="noopener noreferrer"
-                className="text-[22px] hover:-translate-y-1">
-                linkedin
-              </a>
-            </div>
 
-            <a href="/contact" className={`${textBottom} text-[18px]`}>avadnunes@gmail.com</a>
+            <div className="mb-8 lg:mb-0">
+              <div className={`${textBottom} flex justify-center`}>
+                <a href="https://github.com/avaamsel" target="_blank" rel="noopener noreferrer"
+                  className="mr-8 text-[22px] hover:-translate-y-1">
+                  github
+                </a>
+                <a href="https://www.linkedin.com/in/nunesava" target="_blank" rel="noopener noreferrer"
+                  className="text-[22px] hover:-translate-y-1">
+                  linkedin
+                </a>
+              </div>
+
+              <a href="/contact" className={`${textBottom} text-[18px]`}>avadnunes@gmail.com</a>
+            </div>
           </div>
         </div>
       </div>

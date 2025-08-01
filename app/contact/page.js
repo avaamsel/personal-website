@@ -20,7 +20,7 @@ export default function Contact() {
         emailjs.sendForm(SERVICE_ID, AUTOREPLY_TEMPLATE_ID, e.target, PUBLIC_KEY)
           .then(() => {
             setShowPopup(true);
-            // setTimeout(() => setShowPopup(false), 5000);
+            setTimeout(() => setShowPopup(false), 5000);
             e.target.reset();
           })
           .catch((error) => {
@@ -46,7 +46,7 @@ export default function Contact() {
           <div className="flex justify-center items-center mt-12 lg:ml-42">
               <form onSubmit={handleSubmit}>
                 <input type="text" name="name"
-                  placeholder="please enter your first and last name!" required
+                  placeholder="please enter your name!" required
                   className="box-name"/>
                 
                 <input type="email" name="email"
@@ -62,7 +62,7 @@ export default function Contact() {
                           alt="submit bubble contact"
                           width={150}
                           height={95}
-                          className="submit translate-x-32 lg:translate-x-68 -translate-y-30 lg:-translate-y-32"/>
+                          className="submit translate-x-28 lg:translate-x-68 -translate-y-30 lg:-translate-y-32"/>
                       </button>
                   </div> 
               </form>
