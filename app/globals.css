@@ -427,6 +427,14 @@ body {
   flex-shrink: 0;
 }
 
+/* Mobile project text container adjustments */
+@media (max-width: 1024px) {
+  .project-text-container {
+    width: 92% !important;
+    max-width: 500px !important;
+  }
+}
+
 /* contact stylings */
 .contact {
   color: #AC4976;

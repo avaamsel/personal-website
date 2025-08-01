@@ -27,7 +27,7 @@ export default function Experience() {
               <div className="ml-0 lg:ml-6 text-center lg:text-left">
                 <p className="title1">narb</p>
                 <p className="text-[#F9A75B] font-semibold">software developer intern | june 2025 - present</p>
-                <p className="box-text">working to develop nhabits and maintain narb's website!</p>
+                <p className="box-text">working to develop nhabits and maintain narb&apos;s website!</p>
               </div>
             </div>
 
