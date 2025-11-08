@@ -63,7 +63,7 @@ export default function Experience() {
               <div className="ml-0 lg:ml-6 text-center lg:text-left">
                 <p className="title4">narb</p>
                 <p className="text-[#9DD575] font-semibold">software developer intern | june 2025 - october 2025</p>
-                <p className="box-text">developed frontend features for the nhabit app and the main narb website, also worked on streamlining funcionality of narbl by fixing issue related to document uploading and ai nonresponsiveness</p>
+                <p className="box-text">primarily developed frontend features for the nhabit app and the main narb website, also worked on streamlining functionality of narbl ai-model by fixing issues related to document uploading and ai nonresponsiveness</p>
               </div>
             </div>
 
@@ -77,7 +77,7 @@ export default function Experience() {
               <div className="ml-0 lg:ml-6 text-center lg:text-left">
                 <p className="title3">web impact uw</p>
                 <p className="text-[#DF99B9] font-semibold">web developer & project lead | october 2024 - june 2025</p>
-                <p className="box-text">creating websites for UW clubs and local businesses in collaboration with design teams to develop user-friendly and responsive ui/ux</p>
+                <p className="box-text">created websites for UW clubs and local businesses in collaboration with design teams to develop user-friendly and responsive ui/ux</p>
               </div>
             </div>
 
@@ -136,7 +136,7 @@ export default function Experience() {
               <div className="ml-0 lg:ml-6 text-center lg:text-left">
                 <p className="title5">university of washington seattle</p>
                 <p className="text-[#53B5AD] font-semibold">computer science + history | september 2023 - june 2027</p>
-                <p className="box-text"><b>activities: </b>women in computing, cse undergraduate ta, web impact uw, seal undergraduate research assistant, phi alpha theta</p>
+                <p className="box-text"><b>activities: </b>women in computing, cse undergraduate ta, web impact uw, seal undergraduate research assistant, phi alpha theta history honor society</p>
                 <p className="box-text"><b>awards: </b>2024 - 2025 annual dean&apos;s list</p>
               </div>
             </div>
