@@ -12,60 +12,14 @@ export default function About() {
       <div className="flex-1 overflow-y-scroll">
         <div className="flex flex-col">
           <p className="about ml-6 lg:ml-24">about me!</p>
-          <div className="flex flex-col lg:flex-row ml-0 lg:ml-24">
-            <div className="flex-col -translate-y-0 lg:-translate-y-10 order-1 lg:order-1">
-                <Image src="hello-bubble.svg"
-                  alt="hello-bubble"
-                  width={130}
-                  height={75}
-                  className="home-bubble translate-x-64 lg:translate-x-82 translate-y-12 lg:translate-y-12 w-[130px] h-[85px] lg:w-[160px] lg:h-[105px]"/>
-                <Image src="ava-dubs-about.svg"
-                  alt="ava dubs about"
-                  width={390}
-                  height={280}
-                  className="mx-auto lg:mx-0 mb-6 lg:mb-0 w-[360px] h-[260px] lg:w-[430px] lg:h-[320px]"/>
-            </div>
-            <div className="mt-0 lg:mt-20 ml-4 lg:ml-12 order-2 lg:order-2 text-center lg:text-left w-full lg:w-auto max-w-[92%] lg:max-w-[600px] mx-auto lg:mx-0 flex flex-col items-center lg:items-start justify-center lg:justify-start px-4 lg:px-0">
-                <p className="mb-2 text-center lg:text-left">my name is ava!</p>
-                <p className="mb-2 text-center lg:text-left">i&apos;m a current junior at the univerity of washington&apos;s allen school, majoring in <b className="text-[#D06F15]">computer science</b> and minoring in <b className="text-[#D06F15]">history.</b></p>
-                <p className="mb-2 text-center lg:text-left">i&apos;m expected to graduate in <b className="text-[#D06F15]">spring of 2027,</b> with aspirations of pursuing a career in <b className="text-[#D06F15]">full-stack</b> and <b className="text-[#D06F15]">software development!</b></p>
-            </div>
-          </div>
 
-          <p className="about-headers flex justify-center mt-8">my cats!</p>
-          <div className="flex flex-col lg:flex-row justify-center">
-              <div className="flex-col mr-0 lg:mr-18 mb-8 lg:mb-0">
-                <Image src="/turdie-about.svg"
-                  alt = "turdie about"
-                  width={220}
-                  height={220}
-                  className="hover:-translate-y-3 mx-auto lg:mx-0"/>
-                <p className="text-center">clementine!</p>
-              </div>
-              <div className="flex-col mr-0 lg:mr-18 mb-8 lg:mb-0">
-                <Image src="/bubby-about.svg"
-                  alt = "bubby about"
-                  width={220}
-                  height={220}
-                  className="hover:-translate-y-3 mx-auto lg:mx-0"/>
-                <p className="text-center">bubby!</p>
-              </div>
-              <div className="flex-col">
-                <Image src="/trixie-about.svg"
-                  alt = "trixie about"
-                  width={220}
-                  height={220}
-                  className="hover:-translate-y-3 mx-auto lg:mx-0"/>
-                <p className="text-center">trixie!</p>
-              </div>
-          </div>
-          <p className="about-headers flex justify-center mt-18">my interests!</p>
+          <p className="about-headers flex justify-center mt-8">my interests!</p>
           <div className="flex flex-col lg:flex-row ml-0 lg:ml-24 mb-10">
               <Image src="/ava-elisey-dubs.svg"
                 alt="ava elisey and dubs"
                 width={380}
                 height={250}
-                className="mx-auto lg:mx-0 mb-6 lg:mb-0 order-1 lg:order-1 w-[360px] h-[260px] lg:w-[430px] lg:h-[320px]"/>
+                className="mx-auto lg:mx-0 mb-6 lg:mb-0 order-1 lg:order-1 w-[300px] h-[200px] lg:w-[430px] lg:h-[320px]"/>
               <div className="ml-4 lg:ml-12 mt-0 lg:mt-12 order-2 lg:order-2 text-center lg:text-left w-full lg:w-auto max-w-[92%] lg:max-w-[550px] mx-auto lg:mx-0">
                 <p className="mb-2">one of my favorite things to do is spend time with by best friend, <b className="text-[#D06F15]">elise!</b></p>
                 <p className="mb-2">we like to watch bad movies, thrift, and make silly crafts together!</p>
@@ -136,6 +90,50 @@ export default function About() {
                   className="mx-auto lg:mx-0"/>
               </div>
           </div>
+
+          <div>
+            <p className="about-headers flex justify-center mt-12">my cats!</p>
+            <div className="flex flex-col lg:flex-row justify-center">
+              <div className="flex-col mr-0 lg:mr-18 mb-8 lg:mb-0">
+                <Image src="/turdie-about.svg"
+                  alt = "turdie about"
+                  width={220}
+                  height={220}
+                  className="hover:-translate-y-3 mx-auto lg:mx-0"/>
+                <p className="text-center">clementine!</p>
+              </div>
+              <div className="flex-col mr-0 lg:mr-18 mb-8 lg:mb-0">
+                <Image src="/bubby-about.svg"
+                  alt = "bubby about"
+                  width={220}
+                  height={220}
+                  className="hover:-translate-y-3 mx-auto lg:mx-0"/>
+                <p className="text-center">bubby!</p>
+              </div>
+              <div className="flex-col">
+                <Image src="/trixie-about.svg"
+                  alt = "trixie about"
+                  width={220}
+                  height={220}
+                  className="hover:-translate-y-3 mx-auto lg:mx-0"/>
+                <p className="text-center">trixie!</p>
+              </div>
+            </div>
+
+            <div className="flex flex-col lg:flex-row ml-0 lg:ml-24 mt-10">
+              <Image src="/popo-about2.svg"
+                alt = "po po about"
+                width={380}
+                height={250}
+                className="mx-auto lg:mx-0 mb-6 lg:mb-0 order-1 lg:order-1 w-[300px] h-[200px] lg:w-[430px] lg:h-[320px]"/>
+              <div className="ml-4 lg:ml-12 mt-0 order-2 lg:order-2 text-center lg:text-left w-full lg:w-auto max-w-[92%] lg:max-w-[550px] mx-auto lg:mx-0">
+                <p className="text-center lg:text-left mb-2 font-bold text-[#618F40]">po po!</p>
+                <p className="text-center lg:text-left mb-2">po po is the newest addition to the nunes family! she appeared on our back porch, july 2025 and we swifty took her in.</p>
+                <p className="text-center lg:text-left">po po enjoys lounging in our planter boxes, hiding under blankets, and playing with her feather toy.</p>
+              </div>
+            </div>
+          </div>
+
           <div className="flex justify-center mb-4 mt-14">
             <Footer/>
           </div>

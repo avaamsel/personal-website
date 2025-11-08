@@ -14,7 +14,23 @@ export default function Projects() {
         <div className="flex-col">
           <p className="projects ml-6 lg:ml-24">my projects!</p>
           <div className="ml-6 lg:ml-24 mt-6 mb-8">
-          <div className="flex flex-col lg:flex-row mb-12">
+            <div className="flex flex-col lg:flex-row mb-12">
+              <Image src="/projects/project-website.svg"
+                alt="vynl"
+                width={270}
+                height={155}
+                className="mx-auto lg:mx-0 mb-6 lg:mb-0"/>
+              <div className="ml-0 lg:ml-8 project-text-container w-full lg:w-auto text-center lg:text-left">
+                <p className="project-heading">vynl<span className="hidden lg:inline"> | </span><br className="lg:hidden"/>september 2025 - present</p>
+                <p className="project-sub font-semibold">react native, typescript, supabase, jest, spotify api</p>
+                <p className="project-text mb-2">group project for cse 403, software engineering!</p>
+                <p className="project-text mb-2">vynl is a mobile app that combines tinder&apos;s swiping functionality and personalized playlist building!</p>
+                <p className="project-text">primarily working on backend functionality, like the song reccommendation algorithm, as well as creating tests with jest!</p>
+                <Link className="repo-link font-semibold" href="https://github.com/avaamsel/vynl" target="blank">vynl&apos;s repo!</Link>
+              </div>
+            </div>
+
+            <div className="flex flex-col lg:flex-row mb-12">
               <div className="mr-0 lg:mr-10 project-text-container order-2 lg:order-1 w-full lg:w-auto text-center lg:text-left">
                 <p className="project-heading">pathpal | narbhacks 2025<span className="hidden lg:inline"> | </span><br className="lg:hidden"/>july 2025</p>
                 <p className="project-sub font-semibold"> typescript, react, react native, convex, leaflet </p>

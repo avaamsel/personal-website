@@ -13,25 +13,25 @@ export default function Experience() {
         <div className="flex-col">
           <p className="experience ml-6 lg:ml-24">my experience!</p>
           <div className="ml-6 lg:ml-24 mt-4 mb-4">
-            <a href="/AvaNunesResume-August2025.pdf" target="blank" className="resume">PDF of my current resume!</a>
+            <a href="/AvaNunesResume-October2025.pdf" target="blank" className="resume">PDF of my current resume!</a>
           </div>
 
           <div>
-            <div className="flex flex-col lg:flex-row ml-6 lg:ml-24 experience-box1">
-              <Image src="/experience/experience-box2.svg"
-                alt="narb experience"
+            <div className="flex flex-col lg:flex-row ml-6 lg:ml-24 experience-box2">
+              <Image src="/experience/webimpact-experience.svg"
+                alt="web impact experience"
                 width={125}
                 height={125}
                 className="mx-auto lg:mx-0 mb-4 lg:mb-0"/>
 
               <div className="ml-0 lg:ml-6 text-center lg:text-left">
-                <p className="title1">narb</p>
-                <p className="text-[#F9A75B] font-semibold">software developer intern | june 2025 - present</p>
-                <p className="box-text">working to develop nhabits and maintain narb&apos;s website!</p>
+                <p className="title2">web impact uw</p>
+                <p className="text-[#C199DF] font-semibold">coding officer | september 2025 - present</p>                  
+                <p className="box-text">delivering weekly workshops on web development fundamentals in next.js and javascript!</p>
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row ml-6 lg:ml-24 experience-box4 mt-6 lg:mt-0">
+            <div className="flex flex-col lg:flex-row ml-6 lg:ml-24 experience-box1 mt-6 lg:mt-0">
               <Image src="/experience/seal-experience.svg"
                 alt="seal experience"
                 width={125}
@@ -40,16 +40,30 @@ export default function Experience() {
 
               <div>
                 <div className="ml-0 lg:ml-6 text-center lg:text-left">
-                  <p className="title4">sensors, energy, & automation laboratory</p>
-                  <p className="text-[#9DD575] font-semibold">web team lead | march 2025 - present
+                  <p className="title1">sensors, energy, & automation laboratory</p>
+                  <p className="text-[#F9A75B] font-semibold">web team lead | march 2025 - present
                   </p>
                   <p className="box-text">leading a group of around 12 college and high school students in writing academic papers and developing the lab&apos;s productivity software, websites, and other software projects</p>
                 </div>
 
                 <div className="ml-0 lg:ml-6 mt-2 text-center lg:text-left">
-                  <p className="text-[#9DD575] font-semibold">lab associate + research assistant | january 2025 - present</p>
+                  <p className="text-[#F9A75B] font-semibold">lab associate + research assistant | january 2025 - present</p>
                   <p className="box-text">conducting research on the design and implementation of novel custom gpts and its implications for human-ai interaction</p>
                 </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col lg:flex-row ml-6 lg:ml-24 experience-box4 mt-6 lg:mt-0">
+              <Image src="/experience/experience-box2.svg"
+                alt="narb experience"
+                width={125}
+                height={125}
+                className="mx-auto lg:mx-0 mb-4 lg:mb-0"/>
+
+              <div className="ml-0 lg:ml-6 text-center lg:text-left">
+                <p className="title4">narb</p>
+                <p className="text-[#9DD575] font-semibold">software developer intern | june 2025 - october 2025</p>
+                <p className="box-text">developed frontend features for the nhabit app and the main narb website, also worked on streamlining funcionality of narbl by fixing issue related to document uploading and ai nonresponsiveness</p>
               </div>
             </div>
 
