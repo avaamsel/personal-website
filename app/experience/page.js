@@ -13,7 +13,7 @@ export default function Experience() {
         <div className="flex-col">
           <p className="experience ml-6 lg:ml-24">my experience!</p>
           <div className="ml-6 lg:ml-24 mt-4 mb-4">
-            <a href="/AvaNunesResume-October2025.pdf" target="blank" className="resume">PDF of my current resume!</a>
+            <a href="/AvaNunesResume-November2025.pdf" target="blank" className="resume">PDF of my current resume!</a>
           </div>
 
           <div>
