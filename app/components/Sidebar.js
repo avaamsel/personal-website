@@ -27,23 +27,23 @@ export default function Sidebar() {
   if (pathname === '/about') {
     sideBG = 'sidebar-about';
     textBottom = 'navbar-about-bottom';
-    avaBubble = "/ava-bubble-about.svg";
-    dot = "/dot-about.svg";
+    avaBubble = "/bubbles/ava-bubble-about.svg";
+    dot = "/bubbles/dot-about.svg";
   } else if (pathname === '/experience') {
     sideBG = 'sidebar-experience';
     textBottom = 'navbar-experience-bottom';
-    avaBubble = "/ava-bubble-experience.svg";
-    dot = "/dot-experience.svg";
+    avaBubble = "/bubbles/ava-bubble-experience.svg";
+    dot = "/bubbles/dot-experience.svg";
   } else if (pathname === '/projects') {
     sideBG = 'sidebar-projects';
     textBottom = 'navbar-projects-bottom';
-    avaBubble = "/ava-bubble-projects.svg";
-    dot = "/dot-projects.svg";
+    avaBubble = "/bubbles/ava-bubble-projects.svg";
+    dot = "/bubbles/dot-projects.svg";
   } else  {
     sideBG = 'sidebar-contact';
     textBottom = 'navbar-contact-bottom';
-    avaBubble = "/ava-bubble-contact.svg";
-    dot = "/dot-contact.svg";
+    avaBubble = "/bubbles/ava-bubble-contact.svg";
+    dot = "/bubbles/dot-contact.svg";
   }
 
   const toggleSidebar = () => {

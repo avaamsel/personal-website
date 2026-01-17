@@ -42,7 +42,7 @@ export default function Sidebar() {
             >
               {isExpanded ? (
                 <Image 
-                  src="dot-home.svg"
+                  src="/bubbles/dot-home.svg"
                   alt="toggle menu"
                   height={12}
                   width={12}
@@ -51,14 +51,14 @@ export default function Sidebar() {
               ) : (
                 <div className="flex flex-col space-y-5">
                   <Image 
-                    src="dot-home.svg"
+                    src="/bubbles/dot-home.svg"
                     alt="toggle menu"
                     height={12}
                     width={12}
                     className="hover:-translate-y-1"
                   />
                   <Image 
-                    src="dot-home.svg"
+                    src="/bubbles/dot-home.svg"
                     alt="toggle menu"
                     height={12}
                     width={12}
@@ -71,27 +71,27 @@ export default function Sidebar() {
           
           <div className={`nav-links ${isMobile && isExpanded ? 'flex flex-col items-center' : 'block'}`}>
             <div className="flex justify-center mb-10 mt-2">
-              <Image src="dot-home.svg"
+              <Image src="/bubbles/dot-home.svg"
                 alt="home dot"
                 height={12}
                 width={12}
                 className="hover:-translate-y-1"/>
-              <Image src="dot-home.svg"
+              <Image src="/bubbles/dot-home.svg"
                 alt="home dot"
                 height={12}
                 width={12}
                 className="hover:-translate-y-1 ml-8"/>
-              <Image src="dot-home.svg"
+              <Image src="/bubbles/dot-home.svg"
                 alt="home dot"
                 height={12}
                 width={12}
                 className="hover:-translate-y-1 ml-8"/>
-              <Image src="dot-home.svg"
+              <Image src="/bubbles/dot-home.svg"
                 alt="home dot"
                 height={12}
                 width={12}
                 className="hover:-translate-y-1 ml-8"/>
-              <Image src="dot-home.svg"
+              <Image src="/bubbles/dot-home.svg"
                 alt="home dot"
                 height={12}
                 width={12}
@@ -106,7 +106,7 @@ export default function Sidebar() {
           
           <div className={`bubble-container ${isMobile ? '' : 'block'} mt-auto`}>
             <div className="bubble flex justify-center mb-4">
-              <Image src="ava-bubble-home.svg"
+              <Image src="/bubbles/ava-bubble-home.svg"
                 alt="ava bubble"
                 height={100}
                 width={100}/>

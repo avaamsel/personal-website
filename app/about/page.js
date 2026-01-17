@@ -15,7 +15,7 @@ export default function About() {
 
           <p className="about-headers flex justify-center mt-8">my interests!</p>
           <div className="flex flex-col lg:flex-row ml-0 lg:ml-24 mb-10">
-              <Image src="/ava-elisey-dubs.svg"
+              <Image src="/about/ava-elisey-dubs.svg"
                 alt="ava elisey and dubs"
                 width={380}
                 height={250}
@@ -32,12 +32,12 @@ export default function About() {
                 <p className="mb-2">my favorite bands are <b className="text-[#D06F15]">alice in chains</b> and <b className="text-[#D06F15]">soundgarden!</b></p>
               </div>
               <div className="flex justify-center lg:justify-start ml-0 lg:ml-12 mb-6 lg:mb-0 order-1 lg:order-2">
-                <Image src="/alice-about.svg"
+                <Image src="/about/alice-about.svg"
                   alt="alice in chains"
                   width={200}
                   height={200}
                   className="-translate-y-0 lg:-translate-y-10 mr-4 lg:mr-8 w-[160px] h-[160px] lg:w-[200px] lg:h-[200px]"/>
-                <Image src="/soundgarden-about.svg"
+                <Image src="/about/soundgarden-about.svg"
                   alt="soundgarden"
                   width={200}
                   height={200}
@@ -52,37 +52,37 @@ export default function About() {
               <p className="mb-2">here&apos;s my ideal pokemon team, full of some of my favorites:</p>
             </div>
               <div className="grid grid-cols-3 lg:flex lg:justify-center mt-10 gap-4 lg:gap-0">
-                <Image src="/pokemon/empoleon.png" 
+                <Image src="/about/pokemon/empoleon.png" 
                   alt="empoleon"
                   width={150}
                   height={150}
                   unoptimized
                   className="mx-auto lg:mx-0"/>
-                <Image src="/pokemon/exeggutor.png" 
+                <Image src="/about/pokemon/exeggutor.png" 
                   alt="exeggutor"
                   width={150}
                   height={150}
                   unoptimized
                   className="mx-auto lg:mx-0"/>
-                <Image src="/pokemon/gengar.png" 
+                <Image src="/about/pokemon/gengar.png" 
                   alt="gengar"
                   width={150}
                   height={150}
                   unoptimized
                   className="mx-auto lg:mx-0"/>
-                <Image src="/pokemon/ampharos.png" 
+                <Image src="/about/pokemon/ampharos.png" 
                   alt="ampharos"
                   width={150}
                   height={150}
                   unoptimized
                   className="mx-auto lg:mx-0"/>
-                <Image src="/pokemon/garchomp.png" 
+                <Image src="/about/pokemon/garchomp.png" 
                   alt="garchomp"
                   width={150}
                   height={150}
                   unoptimized
                   className="mx-auto lg:mx-0"/>
-                <Image src="/pokemon/snorlax.png" 
+                <Image src="/about/pokemon/snorlax.png" 
                   alt="snorlax"
                   width={150}
                   height={150}
@@ -95,7 +95,7 @@ export default function About() {
             <p className="about-headers flex justify-center mt-12">my cats!</p>
             <div className="flex flex-col lg:flex-row justify-center">
               <div className="flex-col mr-0 lg:mr-18 mb-8 lg:mb-0">
-                <Image src="/turdie-about.svg"
+                <Image src="/about/turdie-about.svg"
                   alt = "turdie about"
                   width={220}
                   height={220}
@@ -103,7 +103,7 @@ export default function About() {
                 <p className="text-center">clementine!</p>
               </div>
               <div className="flex-col mr-0 lg:mr-18 mb-8 lg:mb-0">
-                <Image src="/bubby-about.svg"
+                <Image src="/about/bubby-about.svg"
                   alt = "bubby about"
                   width={220}
                   height={220}
@@ -111,7 +111,7 @@ export default function About() {
                 <p className="text-center">bubby!</p>
               </div>
               <div className="flex-col">
-                <Image src="/trixie-about.svg"
+                <Image src="/about/trixie-about.svg"
                   alt = "trixie about"
                   width={220}
                   height={220}
@@ -121,7 +121,7 @@ export default function About() {
             </div>
 
             <div className="flex flex-col lg:flex-row ml-0 lg:ml-24 mt-10">
-              <Image src="/popo-about2.svg"
+              <Image src="/about/popo-about2.svg"
                 alt = "po po about"
                 width={380}
                 height={250}

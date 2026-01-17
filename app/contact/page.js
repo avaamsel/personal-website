@@ -58,7 +58,7 @@ export default function Contact() {
                   className="box-message mt-4 w-full"/>
                 <div className="flex justify-center items-center">
                       <button type="submit" id="submit" className="">
-                        <Image src="submit-bubble-contact.svg"
+                        <Image src="/bubbles/submit-bubble-contact.svg"
                           alt="submit bubble contact"
                           width={150}
                           height={95}

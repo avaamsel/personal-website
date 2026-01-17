@@ -17,12 +17,12 @@ export default function Home() {
           <p className="welcome">welcome!</p>
           <div className="flex flex-col lg:flex-row ml-0 overflow-x-hidden">
             <div className="flex-col -translate-y-0 lg:-translate-y-10 order-1 lg:order-1">
-              <Image src="hello-bubble.svg"
+              <Image src="home/hello-bubble.svg"
                 alt="hello-bubble"
                 width={130}
                 height={75}
                 className="home-bubble translate-x-46 lg:translate-x-82 translate-y-12 lg:translate-y-12 w-[130px] h-[85px] lg:w-[160px] lg:h-[105px]"/>
-              <Image src="ava-dubs-about.svg"
+              <Image src="home/ava-dubs-about.svg"
                 alt="ava dubs about"
                 width={390}
                 height={280}
@@ -38,13 +38,13 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row space-y-20 lg:space-y-0 lg:space-x-20 mt-16 lg:ml-20 items-center lg:items-start">
             <div className="flex-col -translate-y-18 lg:-translate-y-0">
               <Link href="/about">
-                <Image src ="/about-bubble.svg"
+                <Image src ="/home/about-bubble.svg"
                   alt="about bubble"
                   height = {125}
                   width = {180}
                   className="home-bubble translate-y-12 lg:translate-y-16 -translate-x-18 lg:-translate-x-24 h-[115px] w-[170px] lg:h-[125px] lg:w-[180px]"/>
               </Link>
-              <Image src ="/turdie-home.svg"
+              <Image src ="/home/turdie-home.svg"
                 alt="turdie home"
                 height = {224}
                 width = {224}
@@ -54,13 +54,13 @@ export default function Home() {
             {/*  -translate-y-28 lg:-translate-y-18 */}
             <div className="flex-col -translate-y-28 lg:-translate-y-18">
               <Link href="/experience">
-                <Image src ="/experience-bubble.svg"
+                <Image src ="/home/experience-bubble.svg"
                   alt="experience bubble"
                   height = {125}
                   width = {180}
                   className="home-bubble translate-y-10 lg:translate-y-12 translate-x-6 h-[115px] w-[170px] lg:h-[125px] lg:w-[180px]"/>
               </Link>
-              <Image src ="/bubby-home.svg"
+              <Image src ="/home/bubby-home.svg"
                 alt="bubby home"
                 height = {224}
                 width = {224}
@@ -69,13 +69,13 @@ export default function Home() {
 
              <div className="flex-col -translate-y-38 lg:-translate-y-0">
               <Link href="/projects">
-                <Image src ="/projects-bubble.svg"
+                <Image src ="/home/projects-bubble.svg"
                   alt="projects bubble"
                   height = {125}
                   width = {180}
                   className="home-bubble translate-y-8 lg:translate-y-12 translate-x-28 lg:translate-x-36 h-[115px] w-[170px] lg:h-[125px] lg:w-[180px]"/>
               </Link>
-              <Image src ="/trixie-home.svg"
+              <Image src ="/home/trixie-home.svg"
                 alt="trixie home"
                 height = {224}
                 width = {224}
