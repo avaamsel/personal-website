@@ -1,16 +1,32 @@
+"use client"
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
+import LoadingScreen from "../components/LoadingScreen";
+import { useState, useEffect } from "react";
+
 import Image from "next/image";
 
 export default function About() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
+  
   return (
     <div className="flex h-screen overflow-hidden">
       <div className="flex-shrink-0">
         <Sidebar/>
       </div>
 
-      <div className="flex-1 overflow-y-scroll">
-        <div className="flex flex-col">
+      <div className="flex-1 overflow-y-scroll overflow-x-hidden relative">
+        <LoadingScreen isLoading={isLoading} />
+        
+        <div className={`flex flex-col ${isLoading ? "opacity-0" : "opacity-100 transition-opacity duration-500"}`}>
           <p className="about ml-6 lg:ml-24">about me!</p>
 
           <p className="about-headers flex justify-center mt-8">my interests!</p>

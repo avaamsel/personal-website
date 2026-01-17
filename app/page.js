@@ -1,22 +1,37 @@
+"use client"
 import HomeSidebar from "./components/HomeSidebar";
 import Footer from "./components/Footer";
+import LoadingScreen from "./components/LoadingScreen";
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 
 // need to make the right side scroll and the left sidebar completely static
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="flex h-screen overflow-hidden">
       <div className = "flex-shrink-0">
         <HomeSidebar/>
       </div>
 
-      <div className="flex-1 overflow-y-scroll overflow-x-hidden">
-        <div className="flex-col ml-6 lg:ml-24 pr-4 lg:pr-0">
+      <div className="flex-1 overflow-y-scroll overflow-x-hidden relative">
+        <LoadingScreen isLoading={isLoading} />
+        
+        <div className={`flex-col ml-6 lg:ml-24 pr-4 lg:pr-0 ${isLoading ? "opacity-0" : "opacity-100 transition-opacity duration-500"}`}>
           <p className="welcome">welcome!</p>
           <div className="flex flex-col lg:flex-row ml-0 overflow-x-hidden">
-            <div className="flex-col -translate-y-0 lg:-translate-y-10 order-1 lg:order-1">
+            <div className="flex-col -translate-y-0 lg:-translate-y-8 order-1 lg:order-1">
               <Image src="home/hello-bubble.svg"
                 alt="hello-bubble"
                 width={130}
@@ -31,7 +46,7 @@ export default function Home() {
             <div className="mt-0 lg:mt-20 ml-4 lg:ml-12 order-2 lg:order-2 text-center lg:text-left w-full lg:w-auto max-w-[92%] lg:max-w-[600px] mx-auto lg:mx-0 flex flex-col items-center lg:items-start justify-center lg:justify-start px-4 lg:px-0">
               <p className="mb-2 text-center lg:text-left">my name is ava!</p>
               <p className="mb-2 text-center lg:text-left">i&apos;m a current junior at the univerity of washington&apos;s allen school, majoring in <b className="text-[#618F40]">computer science</b> and minoring in <b className="text-[#618F40]">history.</b></p>
-              <p className="mb-2 text-center lg:text-left">i&apos;m expected to graduate in <b className="text-[#618F40]">spring of 2027,</b> with aspirations of pursuing a career in <b className="text-[#618F40]">full-stack</b> and <b className="text-[#618F40]">software development!</b></p>
+              <p className="mb-2 text-center lg:text-left">i&apos;m expected to graduate in <b className="text-[#618F40]">spring of 2027,</b> with aspirations of pursuing a career in <b className="text-[#618F40]">front-end development</b> or <b className="text-[#618F40]">technical writing!</b></p>
             </div>
           </div>
           

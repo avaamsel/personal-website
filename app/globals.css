@@ -533,3 +533,57 @@ body {
     margin-left: 5% !important;
   }
 }
+
+/* Loading screen styles */
+.loading-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.loading-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Bouncing animation for loading dots */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.bouncing-dot {
+  animation: bounce 1.2s ease-in-out infinite;
+}
+
+.bouncing-dot.dot-1 {
+  animation-delay: 0s;
+}
+
+.bouncing-dot.dot-2 {
+  animation-delay: 0.2s;
+}
+
+.bouncing-dot.dot-3 {
+  animation-delay: 0.4s;
+}
+
+.bouncing-dot.dot-4 {
+  animation-delay: 0.6s;
+}
+
+.bouncing-dot.dot-5 {
+  animation-delay: 0.8s;
+}

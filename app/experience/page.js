@@ -1,22 +1,68 @@
+"use client"
 import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
+import LoadingScreen from "../components/LoadingScreen";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export default function Experience() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="flex h-screen overflow-hidden">
       <div className="flex-shrink-0">
         <Sidebar/>
       </div>
 
-      <div className="flex-1 overflow-y-scroll">
-        <div className="flex-col">
+      <div className="flex-1 overflow-y-scroll overflow-x-hidden relative">
+        <LoadingScreen isLoading={isLoading} />
+        
+        <div className={`flex-col ${isLoading ? "opacity-0" : "opacity-100 transition-opacity duration-500"}`}>
           <p className="experience ml-6 lg:ml-24">my experience!</p>
           <div className="ml-6 lg:ml-24 mt-4 mb-4">
-            <a href="/AvaNunesResume-November2025.pdf" target="blank" className="resume">PDF of my current resume!</a>
-          </div>
+            <a href="/resumes/ResumeJanuary2026.pdf" target="blank" className="resume">PDF of my current resume!</a>
+          </div>  
 
           <div>
+            {/* husky butterwalk / palana */}
+            <div className="flex flex-col lg:flex-row ml-6 lg:ml-24 experience-box4">
+              <Image src="/experience/butterwalk-experience.svg"
+                alt="butterwalk experience"
+                width={125}
+                height={125}
+                className="mx-auto lg:mx-0 mb-4 lg:mb-0"/>
+
+              <div className="ml-0 lg:ml-6 text-center lg:text-left">
+                <p className="title4">husky butterwalk</p>
+                <p className="text-[#9DD575] font-semibold">web developer | january 2026 - present</p>                  
+                <p className="box-text">working with a team of 3 other developers to create a website for husky butterwalk!</p>
+              </div>
+            </div>
+
+            {/* eat together */}
+            <div className="flex flex-col lg:flex-row ml-6 lg:ml-24 experience-box3">
+              <Image src="/experience/eattogether-experience.svg"
+                alt="eat together experience"
+                width={125}
+                height={125}
+                className="mx-auto lg:mx-0 mb-4 lg:mb-0"/>
+
+              <div className="ml-0 lg:ml-6 text-center lg:text-left">
+                <p className="title3">eat together</p>
+                <p className="text-[#DF99B9] font-semibold">software developer | january 2026 - present</p>                  
+                <p className="box-text">contributing to the eat together app, used by 550+ users!</p>
+              </div>
+            </div>
+
+            {/* web impact */}
             <div className="flex flex-col lg:flex-row ml-6 lg:ml-24 experience-box2">
               <Image src="/experience/webimpact-experience.svg"
                 alt="web impact experience"
@@ -31,6 +77,7 @@ export default function Experience() {
               </div>
             </div>
 
+            {/* seal */}
             <div className="flex flex-col lg:flex-row ml-6 lg:ml-24 experience-box1 mt-6 lg:mt-0">
               <Image src="/experience/seal-experience.svg"
                 alt="seal experience"
@@ -41,20 +88,21 @@ export default function Experience() {
               <div>
                 <div className="ml-0 lg:ml-6 text-center lg:text-left">
                   <p className="title1">sensors, energy, & automation laboratory</p>
-                  <p className="text-[#F9A75B] font-semibold">web team lead | march 2025 - present
+                  <p className="text-[#F9A75B] font-semibold">web team lead | march 2025 - january 2026
                   </p>
-                  <p className="box-text">leading a group of around 12 college and high school students in writing academic papers and developing the lab&apos;s productivity software, websites, and other software projects</p>
+                  <p className="box-text">led a group of around 12 college and high school students in writing academic papers and developing the lab&apos;s productivity software, websites, and other software projects</p>
                 </div>
 
                 <div className="ml-0 lg:ml-6 mt-2 text-center lg:text-left">
-                  <p className="text-[#F9A75B] font-semibold">lab associate + research assistant | january 2025 - present</p>
-                  <p className="box-text">conducting research on the design and implementation of novel custom gpts and its implications for human-ai interaction</p>
+                  <p className="text-[#F9A75B] font-semibold">lab associate + research assistant | january 2025 - january 2026</p>
+                  <p className="box-text">conducted research on the design and implementation of novel custom gpts and its implications for human-ai interaction within the</p>
                 </div>
               </div>
             </div>
 
+            {/* narb */}
             <div className="flex flex-col lg:flex-row ml-6 lg:ml-24 experience-box4 mt-6 lg:mt-0">
-              <Image src="/experience/experience-box2.svg"
+              <Image src="/experience/narb-experience.svg"
                 alt="narb experience"
                 width={125}
                 height={125}
@@ -67,8 +115,9 @@ export default function Experience() {
               </div>
             </div>
 
+            {/* web impact */}
             <div className="flex flex-col lg:flex-row ml-6 lg:ml-24 experience-box3 mt-6 lg:mt-0">
-              <Image src="/experience/webimpact-experience.svg"
+              <Image src="/experience/webimpact-experience1.svg"
                 alt="web impact experience"
                 width={125}
                 height={125}
@@ -81,6 +130,7 @@ export default function Experience() {
               </div>
             </div>
 
+            {/* 190b */}
             <div className="flex flex-col lg:flex-row ml-6 lg:ml-24 experience-box2 mt-6 lg:mt-0">
               <Image src="/experience/allenschool-experience.svg"
                 alt="allen school experience"
@@ -96,8 +146,9 @@ export default function Experience() {
               </div>
             </div>
 
+            {/* math and cs tutor */}
             <div className="flex flex-col lg:flex-row ml-6 lg:ml-24 experience-box1 mt-6 lg:mt-0">
-              <Image src="/experience/experience-box1.svg"
+              <Image src="/experience/tutor-experience.svg"
                 alt="math and cs tutor experience"
                 width={125}
                 height={125}
@@ -137,7 +188,7 @@ export default function Experience() {
                 <p className="title5">university of washington seattle</p>
                 <p className="text-[#53B5AD] font-semibold">computer science + history | september 2023 - june 2027</p>
                 <p className="box-text"><b>activities: </b>women in computing, cse undergraduate ta, web impact uw, seal undergraduate research assistant, phi alpha theta history honor society</p>
-                <p className="box-text"><b>awards: </b>2024 - 2025 annual dean&apos;s list</p>
+                <p className="box-text"><b>awards: </b>2023-2024 annual dean&apos;s list, 2024-2025 annual dean&apos;s list</p>
               </div>
             </div>
 
