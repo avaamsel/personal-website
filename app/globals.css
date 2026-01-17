@@ -410,6 +410,12 @@ body {
   font-weight: bold;
 }
 
+.project-date {
+  color: #6A3791;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
 .project-text {
   font-size: 0.8em;
 }
@@ -439,6 +445,34 @@ body {
   .project-text-container {
     width: 92% !important;
     max-width: 500px !important;
+  }
+}
+
+/* Project box styles */
+.project-box {
+  border: 3px solid #C199DF;
+  border-radius: 28px;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Desktop project box adjustments */
+@media (min-width: 1024px) {
+  .project-box {
+    max-height: 600px;
+  }
+}
+
+/* Mobile project box adjustments */
+@media (max-width: 1024px) {
+  .project-box {
+    width: 92%;
+    margin: 0 0 2% 0;
   }
 }
 

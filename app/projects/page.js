@@ -28,114 +28,117 @@ export default function Projects() {
         
         <div className={`flex-col ${isLoading ? "opacity-0" : "opacity-100 transition-opacity duration-500"}`}>
           <p className="projects ml-6 lg:ml-24">my projects!</p>
-          <div className="ml-6 lg:ml-24 mt-6 mb-8">
-            <div className="flex flex-col lg:flex-row mb-12">
-              <Image src="/projects/project-website.svg"
-                alt="vynl"
-                width={270}
-                height={155}
-                className="mx-auto lg:mx-0 mb-6 lg:mb-0"/>
-              <div className="ml-0 lg:ml-8 project-text-container w-full lg:w-auto text-center lg:text-left">
-                <p className="project-heading">vynl<span className="hidden lg:inline"> | </span><br className="lg:hidden"/>september 2025 - present</p>
-                <p className="project-sub font-semibold">react native, typescript, supabase, jest, spotify api</p>
-                <p className="project-text mb-2">group project for cse 403, software engineering!</p>
-                <p className="project-text mb-2">vynl is a mobile app that combines tinder&apos;s swiping functionality and personalized playlist building!</p>
-                <p className="project-text">primarily working on backend functionality, like the song reccommendation algorithm, as well as creating tests with jest!</p>
-                <Link className="repo-link font-semibold" href="https://github.com/avaamsel/vynl" target="blank">vynl&apos;s repo!</Link>
-              </div>
-            </div>
-
-            <div className="flex flex-col lg:flex-row mb-12">
-              <div className="mr-0 lg:mr-10 project-text-container order-2 lg:order-1 w-full lg:w-auto text-center lg:text-left">
-                <p className="project-heading">pathpal | narbhacks 2025<span className="hidden lg:inline"> | </span><br className="lg:hidden"/>july 2025</p>
-                <p className="project-sub font-semibold"> typescript, react, react native, convex, leaflet </p>
-                <p className="project-text mb-2">designed a cross-platform social application using react, next.js, and react native, for narbhacks!</p>
-                <p className="project-text">integrated leaflet to provide dynamic, user-friendly mapping functionality, supporting features like location display and path visualization.</p>
-                  <Link className="repo-link font-semibold" href="https://github.com/avaamsel/narbhacks-pathpal" target="blank">pathpal&apos;s repo!</Link>
-              </div>
-              <Image src="/projects/project-pathpal.svg"
-                alt="pathpal"
-                width={270}
-                height={155}
-                className="order-1 lg:order-2 mx-auto lg:mx-0 mb-6 lg:mb-0"/>
-            </div>
-            
-            <div className="flex flex-col lg:flex-row mb-12">
-              <Image src="/projects/project-website.svg"
-                alt="personal website"
-                width={270}
-                height={155}
-                className="mx-auto lg:mx-0 mb-6 lg:mb-0"/>
-              <div className="ml-0 lg:ml-8 project-text-container w-full lg:w-auto text-center lg:text-left">
-                <p className="project-heading">personal website<span className="hidden lg:inline"> | </span><br className="lg:hidden"/>june 2025 - july 2025</p>
-                <p className="project-sub font-semibold">next.js, javascript, html, css, figma, vercel, emailjs</p>
-                <p className="project-text mb-2">the color changing sidebar utilize&apos;s next.js&apos;s usepathname function to allow for more personality within the pages.</p>
-                <p className="project-text">contact page functionality utilizes emailjs!</p>
-                <Link className="repo-link font-semibold" href="https://github.com/avaamsel/personal-website" target="blank">my personal website&apos;s repo!</Link>
-              </div>
-            </div>
-
-            <div className="flex flex-col lg:flex-row mb-12">
-              <div className="mr-0 lg:mr-10 project-text-container order-2 lg:order-1 w-full lg:w-auto text-center lg:text-left">
-                <p className="project-heading">flights app<span className="hidden lg:inline"> | </span><br className="lg:hidden"/>april 2025 - may 2025</p>
-                <p className="project-sub font-semibold"> postgresql, java, sql, jdbc, junit </p>
-                <p className="project-text mb-2">designed and implemented a relational database schema to model users, flights, and user reservations for a simulated airline booking system.</p>
-                <p className="project-text mb-2">developed backend functionality in java to interact with a postgresql database, focusing on secure user creation, login authentication, and balance management.</p>
-              </div>
-              <Image src="/projects/project-flights.svg"
-                alt="flights app"
-                width={270}
-                height={155}
-                className="order-1 lg:order-2 mx-auto lg:mx-0 mb-6 lg:mb-0"/>
-            </div>
-
-            <div className="flex flex-col lg:flex-row mb-12">
-              <Image src="/projects/project-neurobio.svg"
-                alt="neubiology club website"
-                width={270}
-                height={155}
-                className="mx-auto lg:mx-0 mb-6 lg:mb-0"/>
-              <div className="ml-0 lg:ml-8 project-text-container w-full lg:w-auto text-center lg:text-left">
-                <p className="project-heading">neurobiology club website<span className="hidden lg:inline"> | </span><br className="lg:hidden"/>march 2025 - may 2025</p>
-                <p className="project-sub font-semibold">next.js, javascript, html, css, sanity, figma, vercel</p>
-                <p className="project-text mb-2">website made through web impact uw with fellow coding members and design team.</p>
-                <p className="project-text">events page utilizes santity to establish a headless cms and allows users to filter their search for upcoming club events based on date and type.</p>
-                
-                <div className="flex justify-center lg:justify-start">
-                  <Link className="repo-link font-semibold" href="https://github.com/webimpactuw/neurobiology-club" target="blank">neurobiology&apos;s repo!</Link> 
-                  <p className="project-sub font-semibold ml-2 mr-2 -translate-y-1">|</p>
-                  <Link className="repo-link font-semibold" href="https://neurobiology-club.vercel.app/" target="blank">neurobiology&apos;s website!</Link> 
+          <div className="ml-6 lg:ml-10 lg:pr-0 mt-6 mb-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-x-0 lg:gap-y-6">
+              
+              {/* Vynl */}
+              <div className="project-box">
+                <div className="flex justify-center mb-4">
+                  <Image src="/projects/project-vynl.svg"
+                    alt="vynl"
+                    width={270}
+                    height={155}
+                    className="mx-auto"/>
+                </div>
+                <div className="text-center flex-grow flex flex-col">
+                  <p className="project-heading mb-2">vynl</p>
+                  <p className="project-sub font-semibold mb-3">react native, typescript, supabase, jest, spotify api</p>
+                  <p className="project-text mb-2">mobile app that combines tinder&apos;s swiping functionality and personalized playlist building!</p>
+                  <div className="mt-auto">
+                    <Link className="repo-link font-semibold" href="https://github.com/avaamsel/vynl" target="blank">vynl&apos;s repo!</Link>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="flex flex-col lg:flex-row mb-12">
-              <div className="mr-0 lg:mr-10 project-text-container order-2 lg:order-1 w-full lg:w-auto text-center lg:text-left">
-                <p className="project-heading">dashboard website<span className="hidden lg:inline"> | </span><br className="lg:hidden"/>march 2025 - present</p>
-                <p className="project-sub font-semibold">next.js, typescript, css, html, google apis</p>
-                <p className="project-text mb-2">implementing live data editing and synchronization, providing a seamless user experience for modifying task assignments, completion statuses, and lab progress.</p>
-                <p className="project-text">building a clean, user-friendly interface with custom css and html ensuring readability and intuitive navigation for non-technical users.</p>
+              {/* Dashboard Website */}
+              <div className="project-box">
+                <div className="flex justify-center mb-4">
+                  <Image src="/projects/project-dashboard.svg"
+                    alt="dashboard website"
+                    width={270}
+                    height={155}
+                    className="mx-auto"/>
+                </div>
+                <div className="text-center flex-grow flex flex-col">
+                  <p className="project-heading mb-2">dashboard website</p>
+                  <p className="project-sub font-semibold mb-3">next.js, typescript, css, html, google apis</p>
+                  <p className="project-text mb-2">cross platform dashboard application for seal members allowing task assignment updating and lab progress tracking.</p>
+                </div>
               </div>
-              <Image src="/projects/project-dashboard.svg"
-                alt="dashboard website"
-                width={270}
-                height={155}
-                className="order-1 lg:order-2 mx-auto lg:mx-0 mb-6 lg:mb-0"/>
-            </div>
 
-            <div className="flex flex-col lg:flex-row mb-12">
-              <Image src="/projects/project-paths.svg"
-                alt="campus paths"
-                width={270}
-                height={155}
-                className="mx-auto lg:mx-0 mb-6 lg:mb-0"/>
-               <div className="ml-0 lg:ml-8 project-text-container w-full lg:w-auto text-center lg:text-left">
-                <p className="project-heading">campus paths<span className="hidden lg:inline"> | </span><br className="lg:hidden"/>october 2024 - december 2024</p>
-                <p className="font-semibold project-sub">typescript, react, html, css </p>
-                <p className="project-text mb-2">built an interactive map ui with react, allowing users to select uw campus buildings and visualize paths between friends using markers and dynamic map overlays.</p>
-                <p className="project-text">integrated client-server communication via custom rest api routes, handling user queries and delivering json responses.</p>
-                {/* <Link className="repo-link font-semibold" href="/" target="blank">campus paths&apos; repo!</Link> */}
-              </div> 
+              {/* Pathpal */}
+              <div className="project-box">
+                <div className="flex justify-center mb-4">
+                  <Image src="/projects/project-pathpal.svg"
+                    alt="pathpal"
+                    width={270}
+                    height={155}
+                    className="mx-auto"/>
+                </div>
+                <div className="text-center flex-grow flex flex-col">
+                  <p className="project-heading mb-2">pathpal</p>
+                  <p className="project-sub font-semibold mb-3">typescript, react, react native, convex, leaflet</p>
+                  <p className="project-text mb-2">cross-platform pathfinding application using react, next.js, and react native, for narbhacks!</p>
+                  <div className="mt-auto">
+                    <Link className="repo-link font-semibold" href="https://github.com/avaamsel/narbhacks-pathpal" target="blank">pathpal&apos;s repo!</Link>
+                  </div>
+                </div>
+              </div>
+
+
+              {/* Flights App */}
+              <div className="project-box">
+                <div className="flex justify-center mb-4">
+                  <Image src="/projects/project-flights.svg"
+                    alt="flights app"
+                    width={270}
+                    height={155}
+                    className="mx-auto"/>
+                </div>
+                <div className="text-center flex-grow flex flex-col">
+                  <p className="project-heading mb-2">flights app</p>
+                  <p className="project-sub font-semibold mb-3">postgresql, java, sql, jdbc, junit</p>
+                  <p className="project-text mb-2">simulated airline booking system with a relational database schema to model users, flights, and user reservations.</p>
+                </div>
+              </div>
+
+              {/* Neurobiology Club Website */}
+              <div className="project-box">
+                <div className="flex justify-center mb-4">
+                  <Image src="/projects/project-neurobio.svg"
+                    alt="neurobiology club website"
+                    width={270}
+                    height={155}
+                    className="mx-auto"/>
+                </div>
+                <div className="text-center flex-grow flex flex-col">
+                  <p className="project-heading mb-2">neurobiology club website</p>
+                  <p className="project-sub font-semibold mb-3">next.js, javascript, html, css, sanity, figma, vercel</p>
+                  <p className="project-text mb-2">website made through web impact uw with fellow coding and design team members.</p>
+                  <div className="mt-auto flex flex-col lg:flex-row justify-center gap-2 lg:gap-0">
+                    <Link className="repo-link font-semibold" href="https://github.com/webimpactuw/neurobiology-club" target="blank">neurobiology&apos;s repo!</Link> 
+                    <p className="project-sub font-semibold lg:ml-2 lg:mr-2 lg:-translate-y-1 hidden lg:block">|</p>
+                    <Link className="repo-link font-semibold" href="https://neurobiology-club.vercel.app/" target="blank">neurobiology&apos;s website!</Link> 
+                  </div>
+                </div>
+              </div>
+
+              {/* Campus Paths */}
+              <div className="project-box">
+                <div className="flex justify-center mb-4">
+                  <Image src="/projects/project-paths.svg"
+                    alt="campus paths"
+                    width={270}
+                    height={155}
+                    className="mx-auto"/>
+                </div>
+                <div className="text-center flex-grow flex flex-col">
+                  <p className="project-heading mb-2">campus paths</p>
+                  <p className="font-semibold project-sub mb-3">typescript, react, html, css</p>
+                  <p className="project-text mb-2">interactive map ui allowing users to select uw campus buildings and visualize paths between friends using markers and dynamic map overlays.</p>
+                  {/* <Link className="repo-link font-semibold" href="/" target="blank">campus paths&apos; repo!</Link> */}
+                </div>
+              </div>
             </div>
           </div>
             
