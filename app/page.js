@@ -45,7 +45,7 @@ export default function Home() {
             </div>
             <div className="mt-0 lg:mt-20 ml-4 lg:ml-12 order-2 lg:order-2 text-center lg:text-left w-full lg:w-auto max-w-[92%] lg:max-w-[600px] mx-auto lg:mx-0 flex flex-col items-center lg:items-start justify-center lg:justify-start px-4 lg:px-0">
               <p className="mb-2 text-center lg:text-left">my name is ava!</p>
-              <p className="mb-2 text-center lg:text-left">i&apos;m a current junior at the univerity of washington&apos;s allen school, pursuing a double degree in <b className="text-[#618F40]">computer science</b> and <b className="text-[#618F40]">history, specifically the war and society concentration.</b></p>
+              <p className="mb-2 text-center lg:text-left">i&apos;m a current junior at the univerity of washington&apos;s allen school, pursuing a double degree in <b className="text-[#618F40]">computer science</b> and <b className="text-[#618F40]">history,</b> specifically the war and society concentration.</p>
               <p className="mb-2 text-center lg:text-left">i&apos;m expected to graduate in <b className="text-[#618F40]">spring of 2027,</b> with aspirations of pursuing a career in <b className="text-[#618F40]">front-end development</b> or <b className="text-[#618F40]">technical writing!</b></p>
             </div>
           </div>
